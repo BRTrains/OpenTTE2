@@ -1,1 +1,33 @@
 # Thomas the Tank Engine
+
+identifier: Thomas
+name: Thomas
+based_on: LB&SCR E2 class 0-6-0T
+desc: Thomas the Tank Engine
+classification: TRAIN
+power_type: [STEAM]
+operator: NWR
+length: <??> # Can be over-ridden per profile
+# Performance stats
+weight: <??>
+power: <??>
+tractive_effort: <??> # Can be defined as TE coefficient or TE in NM
+speed: <??>
+introduction_date: <??>
+retire_after: <??>
+life_expectancy: <??>
+
+profiles:
+  - identifier: LOCO
+    size: 2
+    name: 2-car Single Unit
+    types: [TRAIN]
+
+liveries:
+  - name: Default
+    profiles: [LOCO]
+
+# Auto-generate based on type?
+cargo_age_period: 185
+loading_speed: 29
+sound effect: sw_sound_TRAM_tube_modern
