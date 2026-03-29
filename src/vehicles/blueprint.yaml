@@ -1,0 +1,45 @@
+# Thomas the Tank Engine
+
+info:
+  identifier: <??> # Unique indentifier for the class, used as a code reference
+  name: <??> # The name of the class, used in the UI
+  classification: TRAIN|TRAM|BUS|PLANE|SHIP
+  based_on: LB&SCR E2 class 0-6-0T # The real-world class this is based on
+  desc: Thomas the Tank Engine # A longer decscription text
+
+stats:
+  type: LOCO|MU|WAGON|TRAM|VEHICLE # The primary subtype of vehicle. Use VEHICLE for non-rail vehicles
+  power_type: [STEAM|DIESEL|AC|DC|HYDROGEN] # Array of power types. Multiple types will be treated as bimode
+  power: <??> # Power in HP (no units)
+  length: <??> # Can be over-ridden per profile
+  weight: <??> # Weight in metric tons (no units)
+  tractive_effort: <??> # TE coefficient (0.xxx) or TE in NM (no units). Values > 1 are treated as TE in NM, values <= 1 are treated as TE coefficient. 
+  speed: <??> # Speed in mph (no units)
+  num_vehicles: 2 # The number of vehicles in unit of this class. Can be over-ridden per profile. Locomotive + tender = 2
+
+cargo:
+  type: none
+  # cargo_age_period: <??> # Should probably set this via some kind of usage combination
+  # loading_speed: <??> # Should probably set this via some kind of usage combination
+
+dates:
+  introduction_date: <??> # First introduction date of the class
+  retire_class_after: <??> # Set to 0 or blank to have this class always available
+  life_expectancy: <??> # Life expectancy of an individual unit
+
+profiles:
+  - identifier: LOCO # 
+    size: 2 # The number of vehicles in this profile
+    name: 2-car Single Unit # The name of this profile, used in the UI
+    types: [TRAIN|TRAM|BUS|PLANE|SHIP] # Only required if different to the classification, otherwise assumed to be the same
+
+liveries:
+  - name: Default # Used in UI, badges, filtering etc
+    profiles: [DEFAULT] # Which profiles this livery applies to. If blank, "DEFAULT" or not set, applies to all profiles
+    sprite_override: [1, 3, 2] # Optionally override the sprite order, if sprites are ordered differently to the normal (front > rear > middle > middle pantograph) expectation
+
+# "default" to use a generic sound profile based on type, or specify a custom sound profile
+sounds: default
+
+special_tags:
+  - number/<??> # Optional for trains with a known number (eg "number/1" for Thomas)
