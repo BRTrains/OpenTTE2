@@ -16,7 +16,6 @@ stats:
   type: <!!> LOCO|MU|WAGON|TRAM|VEHICLE # The primary subtype of vehicle. Use VEHICLE for non-rail vehicles
   power_type: [STEAM|DIESEL|AC|DC|HYDROGEN] # Array of power types. Multiple types will be treated as bimode
   power: <??> # Power in HP (no units)
-  length: <??> # Can be over-ridden per profile
   weight: <??> # Weight in metric tons (no units)
   tractive_effort: <??> # TE coefficient (0.xxx) or TE in NM (no units). Values > 1 are treated as TE in NM, values <= 1 are treated as TE coefficient. 
   speed: <??> # Speed in mph (no units)
