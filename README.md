@@ -36,6 +36,15 @@ This will compose images (eg purchase sprites) and generate NML, then collate an
 
 Pull requests are always welcome, please keep them small and split large changesets into smaller PRs. Discussion on Discord is always useful before changing anything important
 
+This newGRF is "2x as 1x" zoon and "32bpp as 8bpp" colour. By this, we mean that the sprites take *technical* advantage of OpenTTD's extra zooom and 32bpp colour functionality, while generally adhering to the *spirit* of 1x zoom and 8bpp. Sprites therefore
+
+1. Are initially drawn as 1x zoom sprites, then scaled up to 2x zoom to judiciously add detail
+2. Are rendered in 32bpp colour, but use the original 8bpp palette in addition to some additional colour gradients in the same style
+
+This allows for eg the drawing of faces on TTE characters in a way that is not possible at 1x zoom, and the use of additional colour schemes for real world liveries in gradients that do not exist in the OpenTTD colour palette
+
+These attitudes are intended to be used sparingly, to enhance the set by stepping outside the hard limitations of 1x zoom and 8bpp, but while staying mostly true to the spririt of OpenTTD's original art style. They should not be used to draw units at 2x zoom in general, or to use widely more colourspace. Rather they should be used where 1x zoom prevents a sensible level of detail, or to add colour gradients that would otherwise be impossible (aubergine, orange, teal, cyan, brown, lime green, indigo) with the existing 256 colour palette
+
 ## Discussion
 For suggestions, requests, bug reports, or general discussion, please use either
 
