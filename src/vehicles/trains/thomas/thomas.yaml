@@ -1,40 +1,35 @@
-# Thomas the Tank Engine
+## This is a reference blueprint for defining a vehicle. Copy it to the suitable location under /src/vehicles and fill in fields as required
+## Most fields accept text, unless the value is obviously intended to be numeric
+## <??> indicates optional, <!!> indicates required.
+## <?*> or <!*> indicates a field that can be overridden/overrides other fields, with the ! or ? indicating whether the field is required *somewhere* in the definition
+## A|B|C indicates that the field must be one of the listed options
+## [] indicates an array, which may be combined with A|B etc. One or more values can be provided.
 
 info:
-  identifier: Thomas
-  name: Thomas
+  identifier: thomas # Unique indentifier for the class, used as a code reference
+  name: Thomas the Tank Engine
+  classification: Train
   based_on: LB&SCR E2 class 0-6-0T
-  desc: Thomas the Tank Engine
-  classification: TRAIN
-  power_type: [STEAM]
-  operator: NWR
 
 stats:
-  length: <??> # Can be over-ridden per profile
-  weight: <??>
-  power: <??>
-  tractive_effort: <??> # Can be defined as TE coefficient or TE in NM
-  speed: <??>
+  type: LOCO
+  power_type: STEAM
+  power: 700
+  weight: 55 # Weight in metric tons (no units)
+  speed: 64
+  num_vehicles: 2 # Locomotive + tender = 2
 
 cargo:
-  type: none
-  # cargo_age_period: <??>
-  # loading_speed: <??>
+  cargo_classes: NONE
 
 dates:
-  introduction_date: <??>
-  retire_after: <??>
-  life_expectancy: <??>
+  introduction_date: 1
 
 profiles:
-  - identifier: LOCO
-    size: 2
-    name: 2-car Single Unit
-    types: [TRAIN]
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
 
 liveries:
-  - name: Default
-    profiles: [LOCO]
+  - name: Blue
 
-# "default" to use a generic sound profile based on type, or specify a custom sound profile
-sounds: default
+special_tags:
+  - number/1 # Optional for trains with a known number (eg "number/1" for Thomas)
