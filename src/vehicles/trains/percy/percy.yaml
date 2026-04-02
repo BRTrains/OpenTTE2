@@ -1,0 +1,29 @@
+info:
+  identifier: percy # Unique indentifier for the class, used as a code reference
+  name: Percy the Small Engine
+  classification: Train
+  based_on: GWR 0-4-0ST
+  operator: NWR
+
+stats:
+  type: LOCO
+  power_type: STEAM
+  power: 500
+  weight: 40 # Weight in metric tons (no units)
+  speed: 50
+  num_vehicles: 1
+
+cargo:
+  cargo_classes: NONE
+
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Green
+
+special_tags:
+  - number/6 # Optional for trains with a known number (eg "number/1" for Thomas)
