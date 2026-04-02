@@ -11,6 +11,7 @@ info:
   classification: <!!> TRAIN|TRAM|BUS|PLANE|SHIP
   based_on: <??> # The real-world class this is based on
   desc: <??> # A longer decscription text
+  operator: <??> # The abbreviated/short name of the operating company (eg "NWR" for North Western Railway)
 
 stats:
   type: <!!> LOCO|MU|WAGON|TRAM|VEHICLE # The primary subtype of vehicle. Use VEHICLE for non-rail vehicles
