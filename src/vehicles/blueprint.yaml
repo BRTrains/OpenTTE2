@@ -50,4 +50,5 @@ liveries:
 sounds: <??> default
 
 special_tags:
-  - number/<??> # Optional for trains with a known number (eg "number/1" for Thomas)
+  - NWR/<??> # Optional for trains with a known number (eg "NWR/1" for Thomas)
+  - whyte/<??> # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
