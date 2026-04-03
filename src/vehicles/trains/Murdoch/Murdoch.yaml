@@ -1,0 +1,29 @@
+info:
+  identifier: murdoch # Unique indentifier for the class, used as a code reference
+  name: Murdoch the Mighty Engine
+  classification: Train
+  based_on: BR Standard Class 9F
+  operator: NWR
+
+stats:
+  type: LOCO
+  power_type: STEAM
+  power: <??>
+  weight: <??> # Weight in metric tons (no units)
+  speed: <??>
+  num_vehicles: 2
+
+cargo:
+  cargo_classes: NONE
+
+dates:  
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Yellow
+
+special_tags:
+  - whyte/2-10-0

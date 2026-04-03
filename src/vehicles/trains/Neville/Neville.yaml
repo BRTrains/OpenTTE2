@@ -1,0 +1,30 @@
+info:
+  identifier: neville # Unique indentifier for the class, used as a code reference
+  name: Neville 
+  classification: Train
+  based_on: SR Q1 0-6-0
+  operator: NWR
+
+stats:
+  type: LOCO
+  power_type: STEAM
+  power: <??>
+  weight: <??> # Weight in metric tons (no units)
+  speed: <??>
+  num_vehicles: 2
+
+cargo:
+  cargo_classes: NONE
+
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Black
+
+special_tags:
+  - TOPS/33010 # Optional for trains with a known number (eg "number/1" for Thomas)
+  - whyte/0-6-0

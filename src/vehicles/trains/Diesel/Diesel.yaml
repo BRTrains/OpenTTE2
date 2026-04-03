@@ -1,0 +1,30 @@
+info:
+  identifier: diesel # Unique indentifier for the class, used as a code reference
+  name: Diesel
+  classification: Train
+  based_on: BR Class 08
+  operator: NWR
+  additional_info: Coughs and Sneazles Spread Diseasels
+
+stats:
+  type: LOCO
+  power_type: DIESEL
+  power: <??>
+  weight: <??> # Weight in metric tons (no units)
+  speed: <??>
+  num_vehicles: 1
+
+cargo:
+  cargo_classes: NONE
+
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Black
+
+special_tags:
+  - whyte/0-6-0DE # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)

@@ -26,4 +26,5 @@ liveries:
   - name: Blue
 
 special_tags:
-  - number/1 # Optional for trains with a known number (eg "number/1" for Thomas)
+  - NWR/1 # Optional for trains with a known number (eg "number/1" for Thomas)
+  - whyte/0-6-0T # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)

@@ -1,0 +1,30 @@
+info:
+  identifier: duck # Unique indentifier for the class, used as a code reference
+  name: Duck the Great Western Engine
+  classification: Train
+  based_on: GWR 5700 Class 0-6-0PT
+  operator: NWR
+
+stats:
+  type: LOCO
+  power_type: STEAM
+  power: <??>
+  weight: <??> # Weight in metric tons (no units)
+  speed: <??>
+  num_vehicles: 1
+
+cargo:
+  cargo_classes: NONE
+
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: GWR Green
+
+special_tags:
+  - NWR/8 # Optional for trains with a known number (eg "number/1" for Thomas)
+  - whyte/0-6-0PT # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)

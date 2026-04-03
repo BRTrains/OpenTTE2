@@ -1,0 +1,30 @@
+info:
+  identifier: gordon # Unique indentifier for the class, used as a code reference
+  name: Gordon the Big Engine
+  classification: Train
+  based_on: LNER Class A1/A3 4-6-2
+  operator: NWR
+
+stats:
+  type: LOCO
+  power_type: STEAM
+  power: <??>
+  weight: <??> # Weight in metric tons (no units)
+  speed: <??>
+  num_vehicles: 2
+
+cargo:
+  cargo_classes: NONE
+
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Blue
+
+special_tags:
+  - NWR/4 # Optional for trains with a known number (eg "number/1" for Thomas)
+  - whyte/4-6-2 # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)

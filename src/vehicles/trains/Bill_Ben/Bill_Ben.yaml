@@ -1,16 +1,16 @@
 info:
-  identifier: percy # Unique indentifier for the class, used as a code reference
-  name: Percy the Small Engine
+  identifier: bill_ben # Unique indentifier for the class, used as a code reference
+  name: Bill and Ben the Twin Engines
   classification: Train
-  based_on: GWR 0-4-0ST
+  based_on: Bagnall 0-4-0ST ("Alfred" and "Judy")
   operator: NWR
 
 stats:
   type: LOCO
   power_type: STEAM
-  power: 500
-  weight: 40 # Weight in metric tons (no units)
-  speed: 50
+  power: <??>
+  weight: <??> # Weight in metric tons (no units)
+  speed: <??>
   num_vehicles: 1
 
 cargo:
@@ -23,8 +23,7 @@ profiles:
   - identifier: DEFAULT # An internal identifier used for matching with liveries
 
 liveries:
-  - name: Green
+  - name: Yellow
 
 special_tags:
-  - NWR/6 # Optional for trains with a known number (eg "number/1" for Thomas)
   - whyte/0-4-0ST # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
