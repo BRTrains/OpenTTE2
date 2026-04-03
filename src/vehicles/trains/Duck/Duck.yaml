@@ -2,16 +2,16 @@ info:
   identifier: duck # Unique indentifier for the class, used as a code reference
   name: Duck the Great Western Engine
   classification: Train
-  based_on: GWR 5700 Class 0-6-0PT
+  based_on: Kirby Paul Tank 0-6-0PT
   operator: NWR
 
 stats:
   type: LOCO
   power_type: STEAM
-  power: <??>
-  tractive_effort: <??>
-  weight: <??>
-  speed: <??>
+  power: 300
+  tractive_effort: 0.3
+  weight: 47
+  speed: 40
   num_vehicles: 1
 
 cargo:
