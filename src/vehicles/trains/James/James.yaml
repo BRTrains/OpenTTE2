@@ -2,16 +2,16 @@ info:
   identifier: james # Unique indentifier for the class, used as a code reference
   name: James the Red Engine
   classification: Train
-  based_on: Furness Railway D5 0-6-0 # This is canon for the OpenTTE newGRF, and no argument will be taken.
+  based_on: Furness Railway D5 0-6-0 # This is canon for the OpenTTE newGRF, and no argument will be taken. lmao -fabian.
   operator: NWR
 
 stats:
   type: LOCO
   power_type: STEAM
-  power: <??>
-  tractive_effort: <??>
-  weight: <??>
-  speed: <??>
+  power: 1000
+  tractive_effort: 121907.9612
+  weight: 47
+  speed: 65
   num_vehicles: 2
 
 cargo:

@@ -8,10 +8,10 @@ info:
 stats:
   type: LOCO
   power_type: STEAM
-  power: <??>
-  tractive_effort: <??>
-  weight: <??>
-  speed: <??>
+  power: 2000
+  tractive_effort: 176447.606
+  weight: 155
+  speed: 50
   num_vehicles: 2
 
 cargo:
@@ -24,7 +24,7 @@ profiles:
   - identifier: DEFAULT # An internal identifier used for matching with liveries
 
 liveries:
-  - name: Yellow
+  - name: orange
 
 special_tags:
   - whyte/2-10-0
