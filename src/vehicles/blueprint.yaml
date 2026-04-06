@@ -8,13 +8,14 @@
 info:
   identifier: <!!> # Unique indentifier for the class, used as a code reference
   name: <!!> # The name of the class, used in the UI
-  classification: <!!> TRAIN|TRAM|BUS|PLANE|SHIP
+  sub_name: <??> # An optional secondary name displayed, with less emphasis, alongside the main name in the UI
+  classification: <??> TRAIN|TRAM|BUS|PLANE|SHIP # Can be omitted if the type is specified in profiles or the GRF definition
   based_on: <??> # The real-world class this is based on
   desc: <??> # A longer decscription text
   operator: <??> # The abbreviated/short name of the operating company (eg "NWR" for North Western Railway)
 
 stats:
-  type: <!!> LOCO|MU|WAGON|TRAM|VEHICLE # The primary subtype of vehicle. Use VEHICLE for non-rail vehicles
+  type: <!!> LOCO|MU|WAGON|COACH|TRAM|VEHICLE # The primary subtype of vehicle. Use VEHICLE for non-rail vehicles
   power_type: [STEAM|DIESEL|AC|DC|HYDROGEN] # Array of power types. Multiple types will be treated as bimode
   power: <??> # Power in HP (no units)
   weight: <??> # Weight in metric tons (no units)
