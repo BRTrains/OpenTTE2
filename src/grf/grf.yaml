@@ -1,0 +1,104 @@
+grf:
+  grfid: brtf
+  short_name: OpenTTE2
+  name: Thomas The Tank Engine add-on for BRTrains
+  description: A Thomas the Tank Engine and Friends add-on for BRTrains
+
+versioning:
+  version: 1
+  compatible_version: 1
+
+defaults:
+  vehicle:
+    type: TRAIN
+  sprites:
+    include_2x: true
+    include_32bpp: true
+
+params:
+  - identifier: param_pax_multiplier
+    name_str: Passenger Capacity Multiplier
+    desc_str: Increase capacities of passenger vehicles
+    min_value: 1
+    max_value: 4
+    def_value: 1
+    names:
+      1: 1x
+      2: 2x
+      3: 3x
+      4: 4x
+  - identifier: param_mail_multiplier
+    name_str: Mail Capacity Multiplier
+    desc_str: Increase capacities of mail vehicles
+    min_value: 1
+    max_value: 4
+    def_value: 1
+    names:
+      1: 1x
+      2: 2x
+      3: 3x
+      4: 4x 
+  - identifier: param_freight_multiplier
+    name_str: Freight Capacity Multiplier
+    desc_str: Increase capacities of freight wagons etc
+    min_value: 1
+    max_value: 4
+    def_value: 1
+    names:
+      1: 1x
+      2: 2x
+      3: 3x
+      4: 4x 
+
+  - identifier: param_running_cost_factor
+    name_str: Running Cost Multiplier
+    desc_str: Adjust the running costs of all vehicles
+    min_value: 1
+    max_value: 9
+    def_value: 3
+    names:
+      1: Tiny (--)
+      2: Reduced (-)
+      3: Normal (Default)
+      4: Increased (+)
+      5: High (++)
+      6: Expensive (+++)
+      7: Excessive (++++)
+      8: Monstrous (+++++)
+      9: Ridiculous (++++++)
+  - identifier: param_purchase_cost_factor
+    name_str: Purchase Cost Multiplier
+    desc_str: Adjust the purchase costs of all vehicles
+    min_value: 1
+    max_value: 9
+    def_value: 3
+    names:
+      1: Tiny (--)
+      2: Reduced (-)
+      3: Normal (Default)
+      4: Increased (+)
+      5: High (++)
+      6: Expensive (+++)
+      7: Excessive (++++)
+      8: Monstrous (+++++)
+      9: Ridiculous (++++++)
+
+  - identifier: param_disable_default_vehs
+    name_str: Hide Default OpenTTD vehicles?
+    desc_str: Hide the default OpenTTD vehicles from the vehicle list
+    min_value: 0
+    max_value: 1
+    def_value: 1
+    names:
+      0: Show Default OpenTTD vehicles
+      1: Hide Default OpenTTD vehicles
+
+  - identifier: param_sounds
+    name_str: Sounds
+    desc_str: Enable or disable vehicle sounds
+    min_value: 0
+    max_value: 1
+    def_value: 1
+    names:
+      0: Sounds Off
+      1: Sounds On
