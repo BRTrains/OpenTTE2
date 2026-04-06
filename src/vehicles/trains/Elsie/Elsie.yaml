@@ -1,0 +1,23 @@
+info:
+  identifier: elsie # Unique indentifier for the class, used as a code reference
+  name: Elsie
+  sub_name: Luggage Van
+  based_on: GER Wisbech and Upwell Tramway luggage van No. 9
+  operator: NWR
+
+stats:
+  type: WAGON
+  weight: 15
+  speed: <??>
+
+cargo:
+  cargo_classes: [MAIL, ARMOURED]
+
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Wood
