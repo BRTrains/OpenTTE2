@@ -16,7 +16,17 @@ defaults:
     include_32bpp: true
 
 params:
-  - identifier: param_pax_multiplier
+  - identifier: param_resolution
+    name_str: Use 2x resolution sprites?
+    desc_str: Used to improve face details, the vehicles are still rendered at 1x.
+    min_value: 0
+    max_value: 1
+    def_value: 1
+    names:
+      0: 1x (Default OpenTTD resolution)
+      1: 2x (Higher resolution, better for faces)
+
+  - identifier: param_passenger_multiplier
     name_str: Passenger Capacity Multiplier
     desc_str: Increase capacities of passenger vehicles
     min_value: 1
@@ -66,6 +76,7 @@ params:
       7: Excessive (++++)
       8: Monstrous (+++++)
       9: Ridiculous (++++++)
+
   - identifier: param_purchase_cost_factor
     name_str: Purchase Cost Multiplier
     desc_str: Adjust the purchase costs of all vehicles
@@ -83,7 +94,7 @@ params:
       8: Monstrous (+++++)
       9: Ridiculous (++++++)
 
-  - identifier: param_disable_default_vehs
+  - identifier: param_disable_default_vehicles
     name_str: Hide Default OpenTTD vehicles?
     desc_str: Hide the default OpenTTD vehicles from the vehicle list
     min_value: 0
