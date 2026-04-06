@@ -8,7 +8,6 @@ info:
 stats:
   type: WAGON
   weight: 15
-  speed: <??>
 
 cargo:
   cargo_classes: [MAIL, ARMOURED]

@@ -1,0 +1,22 @@
+info:
+  identifier: henrietta # Unique indentifier for the class, used as a code reference
+  name: Henrietta
+  sub_name: Coach
+  based_on: GER Wisbech and Upwell Tramway 4-wheel coach
+  operator: NWR
+
+stats:
+  type: WAGON
+  weight: 10
+
+cargo:
+  cargo_classes: [PASSENGERS]
+
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Wood

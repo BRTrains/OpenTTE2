@@ -1,0 +1,22 @@
+info:
+  identifier: annie_clarabel # Unique indentifier for the class, used as a code reference
+  name: Annie & Clarabel
+  sub_name: Coach
+  based_on: LBSC Stroudley Coaches
+  operator: NWR
+
+stats:
+  type: WAGON
+  weight: 12
+
+cargo:
+  cargo_classes: [PASSENGERS]
+
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Wood
