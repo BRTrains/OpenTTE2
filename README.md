@@ -9,28 +9,9 @@ This newGRF is available under the GPLv2 license, and all contributions are assu
 ## Installation
 Grab the latest release from the in-game content downloader.
 
-Alternatively get it from the ![Releases](../../releases/) page and copy it into your `OpenTTD/newGRF` folder.
-
 ## Compiling from source
 
-### Prerequisites
-
-Python 3.14+ is required to build the project, earlier versions of Python 3 may work but have not been tested
-
-You will also require the following packages, available from PIP
-- PyYaml
-- Pillow (PIL)
-- NML
-
-Currently (due to the use of the "badge" feature which is part of NML trunk but not yet released), a local copy of NML is required. Download this from the OpenTTD Github and place it in the `../nml` folder, one directory level above the folder this application is in. Eg if this project is `development/OpenTTE2`, place NML at `development/nml`. This step will not be necessary once NML has a released version higher than 0.8.1
-
-To build, run the build script with:
-
-```bash
-python build.py
-```
-
-This will compose images (eg purchase sprites) and generate NML, then collate and compile the NML. Finally it will attempt to copy the newGRF to your `OpenTTD/newgrf` folder if located in the expected location on Windows (with or without OneDrive) or MacOS. Untested on Linux. If the copy fails, simply copy the `build/opentte.grf` file to that folder manually
+This is a BRBuild project, and should be built using that tool, available from the BRTrains Github using the instructions from that project
 
 ## Contributing
 

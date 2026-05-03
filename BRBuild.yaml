@@ -1,3 +1,5 @@
 project:
   name: OpenTTE2
-  build: true
+  build: True
+  target_folders:
+    - src/vehicles
