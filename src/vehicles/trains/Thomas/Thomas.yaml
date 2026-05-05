@@ -1,12 +1,10 @@
 info:
   identifier: thomas # Unique indentifier for the class, used as a code reference
   name: Thomas the Tank Engine
-  classification: Train
-  based_on: LB&SCR E2 class 0-6-0T
-  operator: NWR
 
 stats:
-  type: LOCO
+  classification: TRAIN
+  type: LOCOMOTIVE
   power_type: STEAM
   power: 350
   tractive_effort: 94.8
@@ -26,6 +24,10 @@ profiles:
 liveries:
   - name: Blue
 
+additional_text:
+  - Based on LB&SCR E2 class 0-6-0T
+
 special_tags:
+  - operator/NWR
   - NWR/1 # Optional for trains with a known number (eg "number/1" for Thomas)
-  - whyte/0-6-0T # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
+  - whyte/0-6-0T # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas

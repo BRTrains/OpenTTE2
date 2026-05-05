@@ -1,12 +1,10 @@
 info:
   identifier: toby # Unique indentifier for the class, used as a code reference
   name: Toby the Tram Engine
-  classification: Train
-  based_on: LNER J70 Class 0-6-0T
-  operator: NWR
 
 stats:
-  type: LOCO
+  classification: TRAIN
+  type: LOCOMOTIVE
   power_type: STEAM
   power: 170
   tractive_effort: 39.7
@@ -27,6 +25,10 @@ profiles:
 liveries:
   - name: Brown
 
+additional_text:
+  - Based on LNER J70 Class 0-6-0T
+
 special_tags:
+  - operator/NWR
   - NWR/7 # Optional for trains with a known number (eg "number/1" for Thomas)
   - whyte/0-6-0 # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)

@@ -1,12 +1,10 @@
 info:
   identifier: henrietta # Unique indentifier for the class, used as a code reference
   name: Henrietta
-  sub_name: Coach
-  based_on: GER Wisbech and Upwell Tramway 4-wheel coach
-  operator: NWR
 
 stats:
-  type: WAGON
+  classification: TRAIN
+  type: COACH
   weight: 10
 
 cargo:
@@ -20,3 +18,9 @@ profiles:
 
 liveries:
   - name: Wood
+
+additional_text:
+  - Based on GER Wisbech and Upwell Tramway 4-wheel coach
+
+special_tags:
+  - operator/NWR

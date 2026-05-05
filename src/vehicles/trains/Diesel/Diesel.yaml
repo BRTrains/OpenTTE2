@@ -1,13 +1,10 @@
 info:
   identifier: diesel # Unique indentifier for the class, used as a code reference
   name: Diesel
-  classification: Train
-  based_on: BR Class 08
-  operator: NWR
-  additional_info: Coughs and Sneazles Spread Diseasels
 
 stats:
-  type: LOCO
+  classification: TRAIN
+  type: LOCOMOTIVE
   power_type: DIESEL
   power: 350
   tractive_effort: 155.7
@@ -27,5 +24,10 @@ profiles:
 liveries:
   - name: Black
 
+ additional_text:
+  - Coughs and Sneazles Spread Diseasels
+  - Based on BR Class 08
+
 special_tags:
+  - operator/NWR
   - whyte/0-6-0DE # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)

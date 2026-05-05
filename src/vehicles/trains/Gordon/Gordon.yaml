@@ -1,12 +1,10 @@
 info:
   identifier: gordon # Unique indentifier for the class, used as a code reference
   name: Gordon the Big Engine
-  classification: Train
-  based_on: LNER Class A1/A3 4-6-2
-  operator: NWR
 
 stats:
-  type: LOCO
+  classification: TRAIN
+  type: LOCOMOTIVE
   power_type: STEAM
   power: 2700
   tractive_effort: 132.7
@@ -26,6 +24,10 @@ profiles:
 liveries:
   - name: Blue
 
+additional_text:
+  - Based on LNER Class A1/A3 4-6-2
+
 special_tags:
+  - operator/NWR
   - NWR/4 # Optional for trains with a known number (eg "number/1" for Thomas)
   - whyte/4-6-2 # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)

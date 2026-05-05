@@ -1,12 +1,10 @@
 info:
   identifier: murdoch # Unique indentifier for the class, used as a code reference
   name: Murdoch the Mighty Engine
-  classification: Train
-  based_on: BR Standard Class 9F
-  operator: NWR
 
 stats:
-  type: LOCO
+  classification: TRAIN
+  type: LOCOMOTIVE
   power_type: STEAM
   power: 2000
   tractive_effort: 176.4
@@ -26,5 +24,9 @@ profiles:
 liveries:
   - name: orange
 
+additional_text:
+  - Based on BR Standard Class 9F 2-10-0
+
 special_tags:
+  - operator/NWR
   - whyte/2-10-0

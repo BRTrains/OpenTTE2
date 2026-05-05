@@ -1,11 +1,9 @@
 info:
   identifier: elsie # Unique indentifier for the class, used as a code reference
   name: Elsie
-  sub_name: Luggage Van
-  based_on: GER Wisbech and Upwell Tramway luggage van No. 9
-  operator: NWR
 
 stats:
+  classification: TRAIN
   type: WAGON
   weight: 15
 
@@ -20,3 +18,9 @@ profiles:
 
 liveries:
   - name: Wood
+
+additional_text:
+  - Based on GER Wisbech and Upwell Tramway luggage van No. 9
+
+special_tags:
+  - operator/NWR

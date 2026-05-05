@@ -1,12 +1,10 @@
 info:
   identifier: duck # Unique indentifier for the class, used as a code reference
   name: Duck the Great Western Engine
-  classification: Train
-  based_on: GWR 5700 class 0-6-0PT
-  operator: NWR
-  additonal_info: They say he waddles.
+
 stats:
-  type: LOCO
+  classification: TRAIN
+  type: LOCOMOTIVE
   power_type: STEAM
   power: 300
   tractive_effort: 100.1
@@ -26,6 +24,11 @@ profiles:
 liveries:
   - name: GWR Green
 
+additional_text:
+  - Based on GWR 5700 class 0-6-0PT
+  - They say he waddles.
+
 special_tags:
+  - operator/NWR
   - NWR/8 # Optional for trains with a known number (eg "number/1" for Thomas)
   - whyte/0-6-0PT # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)

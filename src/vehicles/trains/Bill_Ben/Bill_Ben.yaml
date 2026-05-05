@@ -1,12 +1,10 @@
 info:
   identifier: bill_ben # Unique indentifier for the class, used as a code reference
   name: Bill and Ben the Twin Engines
-  classification: Train
-  based_on: Bagnall 0-4-0ST ("Alfred" and "Judy")
-  operator: NWR
 
 stats:
-  type: LOCO
+  classification: TRAIN
+  type: LOCOMOTIVE
   power_type: STEAM
   power: 100
   tractive_effort: 35.6
@@ -26,5 +24,9 @@ profiles:
 liveries:
   - name: Yellow
 
+additional_text:
+  - Based on Bagnall 0-4-0ST ("Alfred" and "Judy")
+
 special_tags:
+  - operator/NWR
   - whyte/0-4-0ST # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)

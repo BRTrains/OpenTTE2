@@ -1,12 +1,10 @@
 info:
   identifier: neville # Unique indentifier for the class, used as a code reference
   name: Neville 
-  classification: Train
-  based_on: SR Q1 0-6-0
-  operator: NWR
 
 stats:
-  type: LOCO
+  classification: TRAIN
+  type: LOCOMOTIVE
   power_type: STEAM
   power: 900
   tractive_effort: 133.8
@@ -26,6 +24,10 @@ profiles:
 liveries:
   - name: Black
 
+additional_text:
+  - Based on SR Q1 0-6-0
+
 special_tags:
+  - operator/NWR
   - TOPS/33010 # Optional for trains with a known number (eg "number/1" for Thomas)
   - whyte/0-6-0

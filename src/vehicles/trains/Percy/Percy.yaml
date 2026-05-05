@@ -1,12 +1,10 @@
 info:
   identifier: percy # Unique indentifier for the class, used as a code reference
   name: Percy the Small Engine
-  classification: Train
-  based_on: GWR 0-4-0ST
-  operator: NWR
+  classification: TRAIN
 
 stats:
-  type: LOCO
+  type: LOCOMOTIVE
   power_type: STEAM
   power: 200
   tractive_effort: 49.4
@@ -26,6 +24,10 @@ profiles:
 liveries:
   - name: Green
 
+additiona_text:
+  - Based on GWR 0-4-0ST
+
 special_tags:
+  - operator/NWR
   - NWR/6 # Optional for trains with a known number (eg "number/1" for Thomas)
   - whyte/0-4-0ST # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
