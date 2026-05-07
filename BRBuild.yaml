@@ -1,5 +1,7 @@
 project:
   name: OpenTTE2
   build: True
+  grf_folder: src/grf
+  sound_folder: src/sound
   target_folders:
     - src/vehicles
