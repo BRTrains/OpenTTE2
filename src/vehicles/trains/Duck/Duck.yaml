@@ -3,8 +3,8 @@ info:
   name: Duck the Great Western Engine
 
 stats:
-  classification: TRAIN
-  type: LOCOMOTIVE
+  vehicle_type: TRAIN
+  train_type: LOCOMOTIVE
   power_type: STEAM
   power: 300
   tractive_effort: 100.1

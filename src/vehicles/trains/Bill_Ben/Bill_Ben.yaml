@@ -3,8 +3,8 @@ info:
   name: Bill and Ben the Twin Engines
 
 stats:
-  classification: TRAIN
-  type: LOCOMOTIVE
+  vehicle_type: TRAIN
+  train_type: LOCOMOTIVE
   power_type: STEAM
   power: 100
   tractive_effort: 35.6

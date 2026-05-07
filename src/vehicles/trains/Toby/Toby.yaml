@@ -3,8 +3,8 @@ info:
   name: Toby the Tram Engine
 
 stats:
-  classification: TRAIN
-  type: LOCOMOTIVE
+  vehicle_type: TRAIN
+  train_type: LOCOMOTIVE
   power_type: STEAM
   power: 170
   tractive_effort: 39.7

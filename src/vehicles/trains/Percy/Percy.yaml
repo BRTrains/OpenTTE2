@@ -1,10 +1,10 @@
 info:
   identifier: percy # Unique indentifier for the class, used as a code reference
   name: Percy the Small Engine
-  classification: TRAIN
 
 stats:
-  type: LOCOMOTIVE
+  vehicle_type: TRAIN
+  train_type: LOCOMOTIVE
   power_type: STEAM
   power: 200
   tractive_effort: 49.4

@@ -3,8 +3,8 @@ info:
   name: Elsie
 
 stats:
-  classification: TRAIN
-  type: WAGON
+  vehicle_type: TRAIN
+  train_type: WAGON
   weight: 15
 
 cargo:

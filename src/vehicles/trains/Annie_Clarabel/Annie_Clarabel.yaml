@@ -3,8 +3,8 @@ info:
   name: Annie & Clarabel
 
 stats:
-  classification: TRAIN
-  type: COACH
+  vehicle_type: TRAIN
+  train_type: COACH
   weight: 12
 
 cargo:

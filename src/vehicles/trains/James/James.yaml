@@ -3,8 +3,8 @@ info:
   name: James the Red Engine
 
 stats:
-  classification: TRAIN
-  type: LOCOMOTIVE
+  vehicle_type: TRAIN
+  train_type: LOCOMOTIVE
   power_type: STEAM
   power: 1000
   tractive_effort: 121.9

@@ -3,8 +3,8 @@ info:
   name: Henry the Green Engine
 
 stats:
-  classification: TRAIN
-  type: LOCOMOTIVE
+  vehicle_type: TRAIN
+  train_type: LOCOMOTIVE
   power_type: STEAM
   power: 1500
   tractive_effort: 113.2

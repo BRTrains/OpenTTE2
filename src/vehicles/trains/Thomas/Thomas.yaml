@@ -3,8 +3,8 @@ info:
   name: Thomas the Tank Engine
 
 stats:
-  classification: TRAIN
-  type: LOCOMOTIVE
+  vehicle_type: TRAIN
+  train_type: LOCOMOTIVE
   power_type: STEAM
   power: 350
   tractive_effort: 94.8
