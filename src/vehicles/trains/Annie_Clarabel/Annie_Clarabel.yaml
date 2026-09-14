@@ -6,6 +6,7 @@ stats:
   vehicle_type: TRAIN
   train_type: COACH
   weight: 12
+  capacity: 30
 
 cargo:
   cargo_classes: [PASSENGERS]

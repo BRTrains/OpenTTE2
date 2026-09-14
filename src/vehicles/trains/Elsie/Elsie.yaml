@@ -6,6 +6,7 @@ stats:
   vehicle_type: TRAIN
   train_type: WAGON
   weight: 15
+  capacity: 12
 
 cargo:
   cargo_classes: [MAIL, ARMOURED]
