@@ -22,7 +22,7 @@ profiles:
   - identifier: DEFAULT # An internal identifier used for matching with liveries
 
 liveries:
-  - name: orange
+  - name: Orange
 
 additional_text:
   - Based on BR Standard Class 9F 2-10-0
