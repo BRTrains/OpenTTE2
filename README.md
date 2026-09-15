@@ -35,7 +35,7 @@ https://www.tt-forums.net/viewtopic.php?f=26&t=54189&start=40
 
 ## Credits
 - Audigex: Development and artwork
-- Fabian/TheThomasFan: Artwork
+- SalvaCottonTail: Artwork
 
 Honourable memtions to DanMacK, SalvaCottontail, Bazek for their work on the predecessor version 1 project, which shares no code or art with this project but was nevertheless an important part of its developmental history
 
