@@ -1,1 +1,27 @@
+info: # this is a push pull wagon so yeah
+  identifier: isabelle # Unique indentifier for the class, used as a code reference
+  name: Isabelle the Autocoach
 
+stats:
+  vehicle_type: TRAIN
+  train_type: COACH
+  weight: 12
+  capacity: 30
+
+cargo:
+  cargo_classes: [PASSENGERS]
+
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Cream and Brown
+
+additional_text:
+  - Based on GWR autocoach
+
+special_tags:
+  - operator/NWR
