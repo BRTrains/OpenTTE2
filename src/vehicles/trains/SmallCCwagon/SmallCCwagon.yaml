@@ -1,6 +1,6 @@
 info:
-  identifier: smallCCwagon # Unique indentifier for the class, used as a code reference
-  name: 3 plank wagon
+  identifier: SmallCCWagon # Unique indentifier for the class, used as a code reference
+  name: 3 Plank Wagon
 
 stats:
   vehicle_type: TRAIN
