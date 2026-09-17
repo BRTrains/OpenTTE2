@@ -1,0 +1,33 @@
+info:
+  identifier: mavis # Unique indentifier for the class, used as a code reference
+  name: Mavis the Quarry Engine
+
+stats:
+  vehicle_type: TRAIN
+  train_type: LOCOMOTIVE
+  power_type: STEAM
+  power: 154
+  tractive_effort: 39.7
+  weight: 30.2
+  speed: 35
+  num_vehicles: 1
+
+cargo:
+  cargo_classes: NONE
+
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+    type: [TRAM, TRAIN]
+
+liveries:
+  - name:Black
+
+additional_text:
+  - Based on the BR Class 04 0-6-0DM
+
+special_tags:
+  - operator/Ffarquhar Quarry Company
+  - whyte/0-6-0DM # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
