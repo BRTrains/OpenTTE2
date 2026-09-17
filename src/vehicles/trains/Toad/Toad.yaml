@@ -1,1 +1,28 @@
+info:
+  identifier: toad # Unique indentifier for the class, used as a code reference
+  name: Toad the Brakevan
 
+stats:
+  vehicle_type: TRAIN
+  train_type: WAGON
+  weight: 16
+  capacity: 0
+
+cargo:
+  cargo_classes: []
+  
+  dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Grey
+
+additional_text:
+  - Based on GWR 16 ton van
+
+special_tags:
+  - operator/NWR
+  -number GWR 56831
