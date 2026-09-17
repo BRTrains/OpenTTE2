@@ -1,0 +1,27 @@
+info:
+  identifier: UtilityVan # Unique indentifier for the class, used as a code reference
+  name: CCT/Utility Van
+
+stats:
+  vehicle_type: TRAIN
+  train_type: WAGON
+  weight: 25
+  capacity: 30
+
+cargo:
+  cargo_classes: [MAIL, ARMOURED, PIECE_GOODS, EXPRESS, COVERED, POTABLE]
+
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Wood # mail variant will be soon
+
+additional_text:
+  - Based on Southern Railway CCT Van
+
+special_tags:
+  - operator/NWR
