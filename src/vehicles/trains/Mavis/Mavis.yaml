@@ -23,7 +23,7 @@ profiles:
     type: [TRAM, TRAIN]
 
 liveries:
-  - name:Black
+  - name: Black
 
 additional_text:
   - Based on the BR Class 04 0-6-0DM
