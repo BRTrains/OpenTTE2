@@ -1,0 +1,27 @@
+info:
+  identifier: smallCCwagon # Unique indentifier for the class, used as a code reference
+  name: 3 plank wagon
+
+stats:
+  vehicle_type: TRAIN
+  train_type: WAGON
+  weight: 10
+  capacity: 10
+
+cargo:
+  cargo_classes: [BULK,NON_POURABLE,PIECE_GOODS]
+  
+  dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Grey
+
+additional_text:
+  - Based on Narrow Gauge freelance Tenmile open wagon kit
+
+special_tags:
+  - operator/NWR
