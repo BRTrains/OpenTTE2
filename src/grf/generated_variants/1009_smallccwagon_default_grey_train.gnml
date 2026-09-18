@@ -1,0 +1,41 @@
+spriteset(spriteset_smallccwagon_default_grey_train_purchase, "/Users/jon/Dev/BRBuild/WorkingData/OpenTTE2/purchase_SmallCCWagon_SmallCCWagon_0.png") {
+	tmpl_purchase(0, 0)
+}
+
+spriteset(spriteset_smallccwagon_default_grey_train_0, "/Users/jon/Dev/OpenTTE2/src/vehicles/trains/SmallCCwagon/SmallCCWagon.png") {
+	tmpl_train_3(0, 0)
+}
+
+switch (FEAT_TRAINS, SELF, sw_smallccwagon_default_grey_train, position_in_articulated_veh % 1)
+{
+	0 : spriteset_smallccwagon_default_grey_train_0;
+}
+
+switch (FEAT_TRAINS, SELF, sw_smallccwagon_default_grey_train_length, position_in_articulated_veh % 1)
+{
+	0 : 3;
+}
+
+item (FEAT_TRAINS, smallccwagon_default_grey_train, 1009) {
+	property {
+		air_drag_coefficient: 0.0;
+		badges: ["Power/Unpowered", "operator/NWR"];
+		cargo_capacity: 1;
+		climates_available: ALL_CLIMATES;
+		model_life: VEHICLE_NEVER_EXPIRES;
+		name: string(str_smallccwagon_default_grey_train_name);
+		tractive_effort_coefficient: 0.0;
+		vehicle_life: 30;
+		weight: 10 ton;
+	}
+	graphics {
+		cargo_capacity: 10 * param_passenger_multiplier;
+		cost_factor: 10;
+		running_cost_factor: 4;
+		additional_text: string(str_smallccwagon_default_grey_train_additional_text);
+		default: sw_smallccwagon_default_grey_train;
+		length: sw_smallccwagon_default_grey_train_length;
+		purchase: spriteset_smallccwagon_default_grey_train_purchase;
+	}
+}
+

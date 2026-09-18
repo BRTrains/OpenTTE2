@@ -1,0 +1,253 @@
+version: 1
+variants:
+- id: 1001
+  vehicle: james
+  profile: default
+  livery: red
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths:
+    - 6
+    - 4
+  archive: generated_variants/1001_james_default_red_train.gnml
+  identifier: james_default_red_train
+  name_string: str_james_default_red_train_name
+  strings:
+    str_james_default_red_train_name: James the Red Engine - Red
+    str_james_default_red_train_additional_text: Based on Furness Railway D5 0-6-0
+- id: 1002
+  vehicle: murdoch
+  profile: default
+  livery: orange
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths:
+    - 8
+    - 4
+  archive: generated_variants/1002_murdoch_default_orange_train.gnml
+  identifier: murdoch_default_orange_train
+  name_string: str_murdoch_default_orange_train_name
+  strings:
+    str_murdoch_default_orange_train_name: Murdoch the Mighty Engine - Orange
+    str_murdoch_default_orange_train_additional_text: Based on BR Standard Class 9F
+      2-10-0
+- id: 1003
+  vehicle: duck
+  profile: default
+  livery: gwr green
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 4
+  archive: generated_variants/1003_duck_default_gwr_green_train.gnml
+  identifier: duck_default_gwr_green_train
+  name_string: str_duck_default_gwr_green_train_name
+  strings:
+    str_duck_default_gwr_green_train_name: Duck the Great Western Engine - GWR Green
+    str_duck_default_gwr_green_train_additional_text: Based on GWR 5700 class 0-6-0PT{}They
+      say he waddles.
+- id: 1004
+  vehicle: annie_clarabel
+  profile: default
+  livery: wood
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 30
+    articulated_count: 1
+    lengths:
+    - 6
+  archive: generated_variants/1004_annie_clarabel_default_wood_train.gnml
+  identifier: annie_clarabel_default_wood_train
+  name_string: str_annie_clarabel_default_wood_train_name
+  strings:
+    str_annie_clarabel_default_wood_train_name: Annie & Clarabel - Wood
+    str_annie_clarabel_default_wood_train_additional_text: Based on LBSC Stroudley
+      Coaches
+- id: 1005
+  vehicle: edward
+  profile: default
+  livery: blue
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths:
+    - 5
+    - 4
+  archive: generated_variants/1005_edward_default_blue_train.gnml
+  identifier: edward_default_blue_train
+  name_string: str_edward_default_blue_train_name
+  strings:
+    str_edward_default_blue_train_name: Edward the Blue Engine - Blue
+    str_edward_default_blue_train_additional_text: Based on Furness Railway K2 4-4-0
+- id: 1006
+  vehicle: toby
+  profile: default
+  livery: brown
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 4
+  archive: generated_variants/1006_toby_default_brown_train.gnml
+  identifier: toby_default_brown_train
+  name_string: str_toby_default_brown_train_name
+  strings:
+    str_toby_default_brown_train_name: Toby the Tram Engine - Brown
+    str_toby_default_brown_train_additional_text: Based on LNER J70 Class 0-6-0T
+- id: 1007
+  vehicle: percy
+  profile: default
+  livery: green
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 4
+  archive: generated_variants/1007_percy_default_green_train.gnml
+  identifier: percy_default_green_train
+  name_string: str_percy_default_green_train_name
+  strings:
+    str_percy_default_green_train_name: Percy the Small Engine - Green
+    str_percy_default_green_train_additional_text: Based on Avonside 0-4-0ST
+- id: 1008
+  vehicle: gordon
+  profile: default
+  livery: blue
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths:
+    - 8
+    - 4
+  archive: generated_variants/1008_gordon_default_blue_train.gnml
+  identifier: gordon_default_blue_train
+  name_string: str_gordon_default_blue_train_name
+  strings:
+    str_gordon_default_blue_train_name: Gordon the Big Engine - Blue
+    str_gordon_default_blue_train_additional_text: Based on LNER Class A1/A3 4-6-2
+- id: 1009
+  vehicle: smallccwagon
+  profile: default
+  livery: grey
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 10
+    articulated_count: 1
+    lengths:
+    - 3
+  archive: generated_variants/1009_smallccwagon_default_grey_train.gnml
+  identifier: smallccwagon_default_grey_train
+  name_string: str_smallccwagon_default_grey_train_name
+  strings:
+    str_smallccwagon_default_grey_train_name: 3 Plank Wagon - Grey
+    str_smallccwagon_default_grey_train_additional_text: Based on Narrow Gauge freelance
+      Tenmile open wagon kit
+- id: 1010
+  vehicle: thomas
+  profile: default
+  livery: blue
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 5
+  archive: generated_variants/1010_thomas_default_blue_train.gnml
+  identifier: thomas_default_blue_train
+  name_string: str_thomas_default_blue_train_name
+  strings:
+    str_thomas_default_blue_train_name: Thomas the Tank Engine - Blue
+    str_thomas_default_blue_train_additional_text: Based on LB&SCR E2 class 0-6-0T{}A
+      Really Useful Engine
+- id: 1011
+  vehicle: isabelle
+  profile: default
+  livery: cream and brown
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 30
+    articulated_count: 1
+    lengths:
+    - 6
+  archive: generated_variants/1011_isabelle_default_cream_and_brown_train.gnml
+  identifier: isabelle_default_cream_and_brown_train
+  name_string: str_isabelle_default_cream_and_brown_train_name
+  strings:
+    str_isabelle_default_cream_and_brown_train_name: Isabelle the Autocoach - Cream
+      and Brown
+    str_isabelle_default_cream_and_brown_train_additional_text: Based on GWR autocoach
+- id: 1012
+  vehicle: elsie
+  profile: default
+  livery: wood
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 12
+    articulated_count: 1
+    lengths:
+    - 5
+  archive: generated_variants/1012_elsie_default_wood_train.gnml
+  identifier: elsie_default_wood_train
+  name_string: str_elsie_default_wood_train_name
+  strings:
+    str_elsie_default_wood_train_name: Elsie - Wood
+    str_elsie_default_wood_train_additional_text: Based on GER Wisbech and Upwell
+      Tramway luggage van No. 9

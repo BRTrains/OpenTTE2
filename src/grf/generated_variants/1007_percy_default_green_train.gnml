@@ -1,0 +1,45 @@
+spriteset(spriteset_percy_default_green_train_purchase, "/Users/jon/Dev/BRBuild/WorkingData/OpenTTE2/purchase_percy_Percy_0.png") {
+	tmpl_purchase(0, 0)
+}
+
+spriteset(spriteset_percy_default_green_train_0, "/Users/jon/Dev/OpenTTE2/src/vehicles/trains/Percy/Percy.png") {
+	tmpl_train_4(0, 0)
+}
+
+switch (FEAT_TRAINS, SELF, sw_percy_default_green_train, position_in_articulated_veh % 1)
+{
+	0 : spriteset_percy_default_green_train_0;
+}
+
+switch (FEAT_TRAINS, SELF, sw_percy_default_green_train_length, position_in_articulated_veh % 1)
+{
+	0 : 4;
+}
+
+item (FEAT_TRAINS, percy_default_green_train, 1007) {
+	property {
+		air_drag_coefficient: 0.13082;
+		badges: ["Power/Steam", "operator/NWR", "NWR/6", "whyte/0-4-0ST"];
+		cargo_capacity: 1;
+		climates_available: ALL_CLIMATES;
+		engine_class: ENGINE_CLASS_STEAM;
+		introduction_date: date(1, 1, 1);
+		model_life: VEHICLE_NEVER_EXPIRES;
+		name: string(str_percy_default_green_train_name);
+		power: 200 hp;
+		speed: 38 mph;
+		tractive_effort_coefficient: 0.13409;
+		vehicle_life: 30;
+		weight: 37.5937 ton;
+	}
+	graphics {
+		cargo_capacity: 0 * param_passenger_multiplier;
+		cost_factor: 28;
+		running_cost_factor: 28;
+		additional_text: string(str_percy_default_green_train_additional_text);
+		default: sw_percy_default_green_train;
+		length: sw_percy_default_green_train_length;
+		purchase: spriteset_percy_default_green_train_purchase;
+	}
+}
+

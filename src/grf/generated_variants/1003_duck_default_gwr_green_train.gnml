@@ -1,0 +1,45 @@
+spriteset(spriteset_duck_default_gwr_green_train_purchase, "/Users/jon/Dev/BRBuild/WorkingData/OpenTTE2/purchase_duck_Duck_0.png") {
+	tmpl_purchase(0, 0)
+}
+
+spriteset(spriteset_duck_default_gwr_green_train_0, "/Users/jon/Dev/OpenTTE2/src/vehicles/trains/Duck/Duck.png") {
+	tmpl_train_4(0, 0)
+}
+
+switch (FEAT_TRAINS, SELF, sw_duck_default_gwr_green_train, position_in_articulated_veh % 1)
+{
+	0 : spriteset_duck_default_gwr_green_train_0;
+}
+
+switch (FEAT_TRAINS, SELF, sw_duck_default_gwr_green_train_length, position_in_articulated_veh % 1)
+{
+	0 : 4;
+}
+
+item (FEAT_TRAINS, duck_default_gwr_green_train, 1003) {
+	property {
+		air_drag_coefficient: 0.08721;
+		badges: ["Power/Steam", "operator/NWR", "NWR/8", "whyte/0-6-0PT"];
+		cargo_capacity: 1;
+		climates_available: ALL_CLIMATES;
+		engine_class: ENGINE_CLASS_STEAM;
+		introduction_date: date(1, 1, 1);
+		model_life: VEHICLE_NEVER_EXPIRES;
+		name: string(str_duck_default_gwr_green_train_name);
+		power: 300 hp;
+		speed: 57 mph;
+		tractive_effort_coefficient: 0.192;
+		vehicle_life: 30;
+		weight: 53.2 ton;
+	}
+	graphics {
+		cargo_capacity: 0 * param_passenger_multiplier;
+		cost_factor: 42;
+		running_cost_factor: 42;
+		additional_text: string(str_duck_default_gwr_green_train_additional_text);
+		default: sw_duck_default_gwr_green_train;
+		length: sw_duck_default_gwr_green_train_length;
+		purchase: spriteset_duck_default_gwr_green_train_purchase;
+	}
+}
+

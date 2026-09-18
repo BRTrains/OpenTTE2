@@ -1,0 +1,42 @@
+spriteset(spriteset_elsie_default_wood_train_purchase, "/Users/jon/Dev/BRBuild/WorkingData/OpenTTE2/purchase_elsie_Elsie_0.png") {
+	tmpl_purchase(0, 0)
+}
+
+spriteset(spriteset_elsie_default_wood_train_0, "/Users/jon/Dev/OpenTTE2/src/vehicles/trains/Elsie/Elsie.png") {
+	tmpl_train_5(0, 0)
+}
+
+switch (FEAT_TRAINS, SELF, sw_elsie_default_wood_train, position_in_articulated_veh % 1)
+{
+	0 : spriteset_elsie_default_wood_train_0;
+}
+
+switch (FEAT_TRAINS, SELF, sw_elsie_default_wood_train_length, position_in_articulated_veh % 1)
+{
+	0 : 5;
+}
+
+item (FEAT_TRAINS, elsie_default_wood_train, 1012) {
+	property {
+		air_drag_coefficient: 0.0;
+		badges: ["Power/Unpowered", "operator/NWR"];
+		cargo_capacity: 1;
+		climates_available: ALL_CLIMATES;
+		introduction_date: date(1, 1, 1);
+		model_life: VEHICLE_NEVER_EXPIRES;
+		name: string(str_elsie_default_wood_train_name);
+		tractive_effort_coefficient: 0.0;
+		vehicle_life: 30;
+		weight: 15 ton;
+	}
+	graphics {
+		cargo_capacity: 12 * param_passenger_multiplier;
+		cost_factor: 10;
+		running_cost_factor: 4;
+		additional_text: string(str_elsie_default_wood_train_additional_text);
+		default: sw_elsie_default_wood_train;
+		length: sw_elsie_default_wood_train_length;
+		purchase: spriteset_elsie_default_wood_train_purchase;
+	}
+}
+
