@@ -8,9 +8,7 @@ stats:
   weight: 10
   capacity: 32
 
-cargo:
-  cargo_classes: [PASSENGERS]
-
+cargo: [CC_PASSENGERS]
 dates:
   introduction_date: 1
 

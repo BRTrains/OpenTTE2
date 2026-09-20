@@ -8,9 +8,7 @@ stats:
   weight: 15
   capacity: 12
 
-cargo:
-  cargo_classes: [MAIL, ARMOURED]
-
+cargo: [CC_MAIL, CC_ARMOURED]
 dates:
   introduction_date: 1
 

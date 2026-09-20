@@ -8,9 +8,7 @@ stats:
   weight: 25
   capacity: 30
 
-cargo:
-  cargo_classes: [MAIL, ARMOURED, PIECE_GOODS, EXPRESS, COVERED, POTABLE]
-
+cargo: [CC_MAIL, CC_ARMOURED, CC_PIECE_GOODS, CC_EXPRESS, CC_COVERED, CC_POTABLE]
 dates:
   introduction_date: 1
 

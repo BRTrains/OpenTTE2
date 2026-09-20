@@ -12,9 +12,7 @@ stats:
   speed: 38
   num_vehicles: 1
 
-cargo:
-  cargo_classes: NONE
-
+cargo: none
 dates:
   introduction_date: 1
 

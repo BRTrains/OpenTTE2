@@ -8,12 +8,9 @@ stats:
   weight: 10
   capacity: 10
 
-cargo:
-  cargo_classes: [BULK,NON_POURABLE,PIECE_GOODS]
-  
-  dates:
+cargo: [CC_BULK, CC_NON_POURABLE, CC_PIECE_GOODS]
+dates:
   introduction_date: 1
-
 profiles:
   - identifier: DEFAULT # An internal identifier used for matching with liveries
 
