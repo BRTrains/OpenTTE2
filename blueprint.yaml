@@ -67,6 +67,7 @@ profiles:
     capacity: <??>
     power: <??>
     weight: <??>
+    introduction_date: <??> # Availability date for this profile, overriding dates.introduction_date
     tilt: <??>
     types: <??> [TRAIN|TRAM|ROADVEH|SHIP|PLANE]
     cargo: <??> # Same syntax as the vehicle-level cargo field
