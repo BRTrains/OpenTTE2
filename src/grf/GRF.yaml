@@ -27,8 +27,8 @@ params:
       1: 2x (Higher resolution, better for faces)
 
   - identifier: param_passenger_multiplier
-    name_str: Passenger Capacity Multiplier
-    desc_str: Increase capacities of passenger vehicles
+    name_str: Capacity Scaling
+    desc_str: Scale vehicle capacities
     min_value: 1
     max_value: 4
     def_value: 1
