@@ -189,7 +189,8 @@ variants:
   compatibility:
     capacity: 10
     articulated_count: 1
-    lengths: []
+    lengths:
+    - 3
   archive: generated_variants/1009_smallccwagon_default_grey_train.gnml
   identifier: smallccwagon_default_grey_train
   name_string: str_smallccwagon_default_grey_train_name
@@ -264,3 +265,156 @@ variants:
     str_elsie_default_wood_train_single_livery_name: Elsie - Wood
     str_elsie_default_wood_train_additional_text: Based on GER Wisbech and Upwell
       Tramway luggage van No. 9
+- id: 1013
+  vehicle: mavis
+  profile: default
+  livery: black
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 4
+  archive: generated_variants/1013_mavis_default_black_train.gnml
+  identifier: mavis_default_black_train
+  name_string: str_mavis_default_black_train_name
+  strings:
+    str_mavis_default_black_train_name: Black
+    str_mavis_default_black_train_single_livery_name: Mavis the Quarry Engine - Black
+    str_mavis_default_black_train_additional_text: Based on the BR Class 04 0-6-0DM
+- id: 1014
+  vehicle: utilityvan
+  profile: default
+  livery: wood
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 30
+    articulated_count: 1
+    lengths:
+    - 5
+  archive: generated_variants/1014_utilityvan_default_wood_train.gnml
+  identifier: utilityvan_default_wood_train
+  name_string: str_utilityvan_default_wood_train_name
+  strings:
+    str_utilityvan_default_wood_train_name: Wood
+    str_utilityvan_default_wood_train_single_livery_name: CCT/Utility Van - Wood
+    str_utilityvan_default_wood_train_additional_text: Based on Southern Railway CCT
+      Van
+- id: 1015
+  vehicle: diesel
+  profile: default
+  livery: black
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 4
+  archive: generated_variants/1015_diesel_default_black_train.gnml
+  identifier: diesel_default_black_train
+  name_string: str_diesel_default_black_train_name
+  strings:
+    str_diesel_default_black_train_name: Black
+    str_diesel_default_black_train_single_livery_name: Diesel - Black
+    str_diesel_default_black_train_additional_text: Based on BR Class 08{}Coughs and
+      Sneazles Spread Diseasels
+- id: 1016
+  vehicle: henry
+  profile: default
+  livery: green
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths:
+    - 8
+    - 4
+  archive: generated_variants/1016_henry_default_green_train.gnml
+  identifier: henry_default_green_train
+  name_string: str_henry_default_green_train_name
+  strings:
+    str_henry_default_green_train_name: Green
+    str_henry_default_green_train_single_livery_name: Henry the Green Engine - Green
+    str_henry_default_green_train_additional_text: Based on LMS Stanier Class 5 "Black
+      Five" 4-6-0
+- id: 1017
+  vehicle: henrietta
+  profile: default
+  livery: wood
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 32
+    articulated_count: 1
+    lengths:
+    - 6
+  archive: generated_variants/1017_henrietta_default_wood_train.gnml
+  identifier: henrietta_default_wood_train
+  name_string: str_henrietta_default_wood_train_name
+  strings:
+    str_henrietta_default_wood_train_name: Wood
+    str_henrietta_default_wood_train_single_livery_name: Henrietta - Wood
+    str_henrietta_default_wood_train_additional_text: Based on GER Wisbech and Upwell
+      Tramway 4-wheel coach
+- id: 1018
+  vehicle: toad
+  profile: default
+  livery: grey
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 4
+  archive: generated_variants/1018_toad_default_grey_train.gnml
+  identifier: toad_default_grey_train
+  name_string: str_toad_default_grey_train_name
+  strings:
+    str_toad_default_grey_train_name: Grey
+    str_toad_default_grey_train_single_livery_name: Toad the Brakevan - Grey
+    str_toad_default_grey_train_additional_text: Based on GWR 16 ton van
+- id: 1019
+  vehicle: neville
+  profile: default
+  livery: black
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths:
+    - 5
+    - 4
+  archive: generated_variants/1019_neville_default_black_train.gnml
+  identifier: neville_default_black_train
+  name_string: str_neville_default_black_train_name
+  strings:
+    str_neville_default_black_train_name: Black
+    str_neville_default_black_train_single_livery_name: Neville - Black
+    str_neville_default_black_train_additional_text: Based on SR Q1 0-6-0
