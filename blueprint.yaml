@@ -1,55 +1,92 @@
-## This is a reference blueprint for defining a vehicle. Copy it to the suitable location under /src/vehicles and fill in fields as required
-## Most fields accept text, unless the value is obviously intended to be numeric
-## <??> indicates optional, <!!> indicates required.
-## <?*> or <!*> indicates a field that can be overridden/overrides other fields, with the ! or ? indicating whether the field is required *somewhere* in the definition
-## A|B|C indicates that the field must be one of the listed options
-## [] indicates an array, which may be combined with A|B etc. One or more values can be provided.
+## Reference blueprint for a BRBuild vehicle definition.
+## Copy this file to /src/vehicles/<Vehicle>/<Vehicle>.yaml and remove fields you do not need.
+## <??> means optional; <!!> means required. Values shown here are examples/placeholders.
+## Vehicle-level values are inherited by profiles and liveries where the field is supported;
+## per-variant precedence is profile, then livery, then vehicle.
 
 info:
-  identifier: <!!> # Unique indentifier for the class, used as a code reference
-  name: <!!> # The name of the class, used in the UI
-  sub_name: <??> # An optional secondary name displayed, with less emphasis, alongside the main name in the UI
-  classification: <??> TRAIN|TRAM|BUS|PLANE|SHIP # Can be omitted if the type is specified in profiles or the GRF definition
-  based_on: <??> # The real-world class this is based on
-  desc: <??> # A longer decscription text
-  operator: <??> # The abbreviated/short name of the operating company (eg "NWR" for North Western Railway)
+  identifier: <!!> # Unique identifier used as a code reference
+  name: <!!> # Display name in the purchase list
+  sub_name: <??> # Optional subtitle shown with the name
+  based_on: <??> # Real-world/source vehicle description
+  operator: <??> # Operator badge source, e.g. NWR
 
 stats:
-  type: <!!> LOCO|MU|WAGON|COACH|TRAM|VEHICLE # The primary subtype of vehicle. Use VEHICLE for non-rail vehicles
-  power_type: [STEAM|DIESEL|AC|DC|HYDROGEN] # Array of power types. Multiple types will be treated as bimode
-  power: <??> # Power in HP (no units)
-  weight: <??> # Weight in metric tons (no units)
-  tractive_effort: <??> # TE coefficient (0.xxx) or TE in NM (no units). Values > 1 are treated as TE in NM, values <= 1 are treated as TE coefficient. 
-  speed: <??> # Speed in mph (no units)
-  num_vehicles: 2 # The number of vehicles in unit of this class. Can be over-ridden per profile. Locomotive + tender = 2
+  vehicle_type: <!!> TRAIN|TRAM|ROADVEH|SHIP|PLANE
+  train_type: <!!> LOCOMOTIVE|MULTIPLE_UNIT|WAGON|COACH # Required for every current candidate
+  power_type: <??> [STEAM|DIESEL|DIESEL_HYDRAULIC|DIESEL_ELECTRIC|HYDROGEN|BATTERY|GAS_TURBINE|ELECTRIC|OHLE|THIRD_RAIL|FOURTH_RAIL]
+  power: <??> # Horsepower
+  weight: <??> # Metric tonnes
+  length: <??> # Vehicle length in eighths of a tile
+  tractive_effort: <??> # Kilonewtons
+  speed: <??> # mph
+  capacity: <??> # Base cargo capacity; profiles may override it
+  tilt: <??> # Named tilt level or numeric strength
+  sound_effect: <??> # Optional sound override
+  visual_effect: <??> # Optional visual-effect override
+  engine_class: <??> # Optional engine classification override
+  size: <??> # Relative size modifier
+  num_vehicles: <??> # Number of articulated vehicles; profiles may override it
 
-cargo:
-  cargo_classes: <??> [none|passengers] # Any NML CC_* cargo class with the CC_ removed, or "none"
-  allow_cargo: <??> # Optional list of additional cargos that can be carried in addition to the cargo class
-  disallow_cargo: <??> # Optional list of cargos that cannot be carried, even if they would normally be allowed by cargo_classes or allow_cargo
+# Cargo is a scalar or list of presets/classes. A CC_ prefix forces one class rather
+# than a same-named preset (for example, bulk is a preset but CC_BULK is one class).
+cargo: <??> passenger|parcels|mail|containerised|bulk|tank|open_wagon|none|<NML_CLASS>
+# Examples:
+# cargo: passenger
+# cargo: [CC_MAIL, CC_ARMOURED]
+# cargo: none
+non_cargo_classes: <??> [<NML_CLASS>] # Classes excluded from refitting; classes only, no presets
+default_cargo_type: <??> DEFAULT_CARGO_FIRST_REFITTABLE
+autorefit: <??> true|false
 
-  # cargo_age_period: <??> # Should probably set this via some kind of usage combination
-  # loading_speed: <??> # Should probably set this via some kind of usage combination
+# These are vehicle-level fields and may also be placed at the root of a definition.
+classification: <??> # Free-form categorisation string
+additional_text: <??> # String or list of strings shown in the purchase list
+model_life: <??> # Years; 0 means never expires
+retire_early: <??> # Years before/after normal retirement
+vehicle_life: <??> # Expected individual-vehicle lifetime
+cargo_age_period: <??> # Cargo ageing period in ticks
+loading_speed: <??> # Cargo units loaded per interval
+sound_effect: <??> # Root-level sound override
+visual_effect: <??> # Root-level visual-effect override
+engine_class: <??> # Root-level engine classification override
+size: <??> # Root-level size override
+num_vehicles: <??> # Root-level articulated vehicle count override
+sprite_override: <??> [<row>, ...] # Physical spritesheet row mapping
+sprite_exclude: <??> [<row>, ...] # Physical spritesheet rows to exclude
+special_tags: <??> [<tag>, ...] # Tags used to register badges
+nml_override: <??> # Mapping of graphics callback names to hand-written NML switches
 
-dates:
-  introduction_date: <??> # First introduction date of the class
-  retire_class_after: <??> # Set to 0 or blank to have this class always available
-  life_expectancy: <??> # Life expectancy of an individual unit
-
+# A candidate may contain one or more profiles. Each profile needs an identifier.
 profiles:
-  - identifier: DEFAULT # An internal identifier used for matching with liveries
-    name: <??> # The friendly name of this profile, used in the UI
-    size: 2 # The number of vehicles in this profile
-    types: [TRAIN|TRAM|BUS|PLANE|SHIP] # Only required if different to the classification, otherwise assumed to be the same
+  - identifier: DEFAULT
+    name: <??>
+    size: <??>
+    num_vehicles: <??>
+    capacity: <??>
+    power: <??>
+    weight: <??>
+    tilt: <??>
+    types: <??> [TRAIN|TRAM|ROADVEH|SHIP|PLANE]
+    cargo: <??> # Same syntax as the vehicle-level cargo field
+    sound_effect: <??>
+    visual_effect: <??>
+    special_tags: <??> [<tag>, ...]
+    sprite_override: <??> [<row>, ...]
+    sprite_exclude: <??> [<row>, ...]
+    nml_override: <??>
 
 liveries:
-  - name: Default # Friendly name of this livery. Used in UI, badges, filtering etc
-    profiles: [DEFAULT] # Which profile(s) this livery applies to. If blank, "DEFAULT" or not set, applies to all profiles
-    sprite_override: [1, 3, 2] # Optionally override the sprite order, if sprites are ordered differently to the normal (front > rear > middle > middle pantograph) expectation
-
-# "default" to use a generic sound profile based on type, or specify a custom sound profile
-sounds: <??> default
-
-special_tags:
-  - NWR/<??> # Optional for trains with a known number (eg "NWR/1" for Thomas)
-  - whyte/<??> # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
+  - name: Default
+    profiles: <??> [DEFAULT]
+    size: <??>
+    num_vehicles: <??>
+    power: <??>
+    weight: <??>
+    tilt: <??>
+    sound_effect: <??>
+    visual_effect: <??>
+    special_tags: <??> [<tag>, ...]
+    sprite_override: <??> [<row>, ...]
+    sprite_exclude: <??> [<row>, ...]
+    nml_override: <??>
