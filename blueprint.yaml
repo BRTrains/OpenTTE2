@@ -19,7 +19,8 @@ stats:
   weight: <??> # Metric tonnes
   length: <??> # Vehicle length in eighths of a tile
   tractive_effort: <??> # Kilonewtons
-  speed: <??> # mph
+  speed: <??> # Service speed in mph — the limit the vehicle normally runs to
+  design_speed: <??> # Design speed in mph, only where it differs from the service speed
   capacity: <??> # Base cargo capacity; profiles may override it
   tilt: <??> # Named tilt level or numeric strength
   sound_effect: <??> # Optional sound override
