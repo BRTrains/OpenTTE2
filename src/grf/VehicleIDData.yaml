@@ -189,8 +189,7 @@ variants:
   compatibility:
     capacity: 10
     articulated_count: 1
-    lengths:
-    - 3
+    lengths: []
   archive: generated_variants/1009_smallccwagon_default_grey_train.gnml
   identifier: smallccwagon_default_grey_train
   name_string: str_smallccwagon_default_grey_train_name
