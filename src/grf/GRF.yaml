@@ -16,6 +16,16 @@ defaults:
     include_32bpp: true
 
 params:
+  - identifier: param_speed_mode
+    name_str: Speed Mode
+    desc_str: Use each unit's design speed, or its permitted service speed
+    min_value: 0
+    max_value: 1
+    def_value: 1
+    names:
+      0: Service Speed
+      1: Design Speed
+
   - identifier: param_resolution
     name_str: Use 2x resolution sprites?
     desc_str: Used to improve face details, the vehicles are still rendered at 1x.
