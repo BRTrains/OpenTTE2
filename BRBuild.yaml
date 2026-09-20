@@ -3,5 +3,6 @@ project:
   build: True
   grf_folder: src/grf
   sound_folder: src/sound
+  palette: Sprites/ttd-newgrf-dos.gpl
   target_folders:
     - src/vehicles

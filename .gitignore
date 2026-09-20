@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+WorkingData/
+Build/
+*.grf
+*.nml
+build.log
+nmlc.log
+.venv/
+.DS_Store
+*.png.cache
+*.png.cacheindex
+**/working/
+*_working.png
+legacy_fixed.png
+/src/grf/generated_variants
