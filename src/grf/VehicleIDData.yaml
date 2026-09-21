@@ -419,3 +419,26 @@ variants:
     str_neville_default_black_train_name: Neville - Black
     str_neville_default_black_train_single_livery_name: Neville - Black
     str_neville_default_black_train_additional_text: Based on SR Q1 0-6-0
+- id: 1020
+  vehicle: bill_ben
+  profile: default
+  livery: yellow
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 8
+  archive: generated_variants/1020_bill_ben_default_yellow_train.gnml
+  identifier: bill_ben_default_yellow_train
+  name_string: str_bill_ben_default_yellow_train_name
+  strings:
+    str_bill_ben_default_yellow_train_name: Bill and Ben the Twin Engines - Yellow
+    str_bill_ben_default_yellow_train_single_livery_name: Bill and Ben the Twin Engines
+      - Yellow
+    str_bill_ben_default_yellow_train_additional_text: Based on Bagnall 0-4-0ST "Alfred"
+      and "Judy"
