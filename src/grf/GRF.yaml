@@ -132,3 +132,7 @@ params:
     names:
       0: Fat Controller Face Off
       1: Fat Controller Face On
+
+global_actions:
+  - condition: param_disable_default_vehicles == 1
+    action: disable_item(FEAT_TRAINS)
