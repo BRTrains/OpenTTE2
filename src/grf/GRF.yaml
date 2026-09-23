@@ -15,6 +15,13 @@ defaults:
     include_2x: true
     include_32bpp: true
 
+# The purchase list is ordered by hand rather than by a derived rule: the NWR characters
+# come first in their number order, then the engines with no number by power, then the
+# coaches and wagons. The block names the generated item symbols, so a new or renamed
+# candidate has to be added to the file by hand.
+purchase_list:
+  file: custom_nml/append/sortpurchase.pnml
+
 params:
   - identifier: param_speed_mode
     name_str: Speed Mode

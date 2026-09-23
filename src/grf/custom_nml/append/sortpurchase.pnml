@@ -1,0 +1,58 @@
+// Purchase-list order for OpenTTE2, maintained by hand (purchase_list.file).
+//
+// 1. NWR-numbered engines, by number.
+// 2. The engines without an NWR number, by power (lowest first).
+// 3. Coaches, by name.
+// 4. Wagons, by name.
+//
+// The block names the item symbols the build produced, so a new or renamed candidate
+// has to be added here by hand.
+sort(FEAT_TRAINS, [
+  // -- engines with an NWR number, by number --
+  // Thomas the Tank Engine (NWR 1, 350 hp)
+  thomas_default_blue_train,
+  // Edward the Blue Engine (NWR 2, 700 hp)
+  edward_default_blue_train,
+  // Henry the Green Engine (NWR 3, 1500 hp)
+  henry_default_green_train,
+  // Gordon the Big Engine (NWR 4, 2700 hp)
+  gordon_default_blue_train,
+  // James the Red Engine (NWR 5, 1000 hp)
+  james_default_red_train,
+  // Percy the Small Engine (NWR 6, 200 hp)
+  percy_default_green_train,
+  // Toby the Tram Engine (NWR 7, 170 hp)
+  toby_default_brown_train,
+  // Duck the Great Western Engine (NWR 8, 300 hp)
+  duck_default_gwr_green_train,
+
+  // -- engines with no NWR number, lowest power first --
+  // Bill and Ben the Twin Engines (100 hp)
+  bill_ben_default_yellow_train,
+  // Mavis the Quarry Engine (154 hp)
+  mavis_default_black_train,
+  // Diesel (350 hp)
+  diesel_default_black_train,
+  // Neville (900 hp)
+  neville_default_black_train,
+  // Murdoch the Mighty Engine (2000 hp)
+  murdoch_default_orange_train,
+
+  // -- coaches --
+  // Annie & Clarabel
+  annie_clarabel_default_wood_train,
+  // Henrietta
+  henrietta_default_wood_train,
+  // Isabelle the Autocoach
+  isabelle_default_cream_and_brown_train,
+
+  // -- wagons --
+  // 3 Plank Wagon
+  smallccwagon_default_grey_train,
+  // CCT/Utility Van
+  utilityvan_default_wood_train,
+  // Elsie
+  elsie_default_wood_train,
+  // Toad the Brakevan
+  toad_default_grey_train
+]);
