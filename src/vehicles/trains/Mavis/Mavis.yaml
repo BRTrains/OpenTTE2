@@ -18,7 +18,7 @@ dates:
 
 profiles:
   - identifier: DEFAULT # An internal identifier used for matching with liveries
-    type: [TRAM, TRAIN]
+    types: [TRAM, TRAIN]
 
 liveries:
   - name: Black

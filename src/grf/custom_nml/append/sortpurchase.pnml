@@ -6,7 +6,9 @@
 // 4. Wagons, by name.
 //
 // The block names the item symbols the build produced, so a new or renamed candidate
-// has to be added here by hand.
+// has to be added here by hand. A unit typed `types: [TRAM, TRAIN]` appears in both
+// blocks: the tram side is ordered by the same rule.
+
 sort(FEAT_TRAINS, [
   // -- engines with an NWR number, by number --
   // Thomas the Tank Engine (NWR 1, 350 hp)
@@ -55,4 +57,15 @@ sort(FEAT_TRAINS, [
   elsie_default_wood_train,
   // Toad the Brakevan
   toad_default_grey_train
+]);
+
+// The tram side of the units typed for both features (Toby, Mavis).
+sort(FEAT_ROADVEHS, [
+  // -- engines with an NWR number, by number --
+  // Toby the Tram Engine (NWR 7, 170 hp)
+  toby_default_brown_tram,
+
+  // -- engines with no NWR number, lowest power first --
+  // Mavis the Quarry Engine (154 hp)
+  mavis_default_black_tram
 ]);

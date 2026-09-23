@@ -442,3 +442,45 @@ variants:
       - Yellow
     str_bill_ben_default_yellow_train_additional_text: Based on Bagnall 0-4-0ST "Alfred"
       and "Judy"
+- id: 1021
+  vehicle: mavis
+  profile: default
+  livery: black
+  vehicle_type: tram
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 4
+  archive: generated_variants/1021_mavis_default_black_tram.gnml
+  identifier: mavis_default_black_tram
+  name_string: str_mavis_default_black_tram_name
+  strings:
+    str_mavis_default_black_tram_name: Mavis the Quarry Engine - Black
+    str_mavis_default_black_tram_single_livery_name: Mavis the Quarry Engine - Black
+    str_mavis_default_black_tram_additional_text: Based on the BR Class 04 0-6-0DM
+- id: 1022
+  vehicle: toby
+  profile: default
+  livery: brown
+  vehicle_type: tram
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 4
+  archive: generated_variants/1022_toby_default_brown_tram.gnml
+  identifier: toby_default_brown_tram
+  name_string: str_toby_default_brown_tram_name
+  strings:
+    str_toby_default_brown_tram_name: Toby the Tram Engine - Brown
+    str_toby_default_brown_tram_single_livery_name: Toby the Tram Engine - Brown
+    str_toby_default_brown_tram_additional_text: Based on LNER J70 Class 0-6-0T
