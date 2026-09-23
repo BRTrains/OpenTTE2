@@ -10,6 +10,7 @@ nmlc.log
 .DS_Store
 *.png.cache
 *.png.cacheindex
+*.png.sheetcache.json
 **/working/
 *_working.png
 legacy_fixed.png
