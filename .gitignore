@@ -11,6 +11,7 @@ nmlc.log
 *.png.cache
 *.png.cacheindex
 *.png.sheetcache.json
+*.lightcache.json
 **/working/
 *_working.png
 legacy_fixed.png
