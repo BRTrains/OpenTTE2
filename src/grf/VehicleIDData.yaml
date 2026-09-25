@@ -20,7 +20,6 @@ variants:
   name_string: str_james_default_red_train_name
   strings:
     str_james_default_red_train_name: James the Red Engine - Red
-    str_james_default_red_train_single_livery_name: James the Red Engine - Red
     str_james_default_red_train_additional_text: Based on Furness Railway D5 0-6-0
 - id: 1002
   vehicle: murdoch
@@ -42,8 +41,6 @@ variants:
   name_string: str_murdoch_default_orange_train_name
   strings:
     str_murdoch_default_orange_train_name: Murdoch the Mighty Engine - Orange
-    str_murdoch_default_orange_train_single_livery_name: Murdoch the Mighty Engine
-      - Orange
     str_murdoch_default_orange_train_additional_text: Based on BR Standard Class 9F
       2-10-0
 - id: 1003
@@ -65,8 +62,6 @@ variants:
   name_string: str_duck_default_gwr_green_train_name
   strings:
     str_duck_default_gwr_green_train_name: Duck the Great Western Engine - GWR Green
-    str_duck_default_gwr_green_train_single_livery_name: Duck the Great Western Engine
-      - GWR Green
     str_duck_default_gwr_green_train_additional_text: Based on GWR 5700 class 0-6-0PT{}They
       say he waddles.
 - id: 1004
@@ -88,7 +83,6 @@ variants:
   name_string: str_annie_clarabel_default_wood_train_name
   strings:
     str_annie_clarabel_default_wood_train_name: Annie & Clarabel - Wood
-    str_annie_clarabel_default_wood_train_single_livery_name: Annie & Clarabel - Wood
     str_annie_clarabel_default_wood_train_additional_text: Based on LBSC Stroudley
       Coaches
 - id: 1005
@@ -111,7 +105,6 @@ variants:
   name_string: str_edward_default_blue_train_name
   strings:
     str_edward_default_blue_train_name: Edward the Blue Engine - Blue
-    str_edward_default_blue_train_single_livery_name: Edward the Blue Engine - Blue
     str_edward_default_blue_train_additional_text: Based on Furness Railway K2 4-4-0
 - id: 1006
   vehicle: toby
@@ -132,7 +125,6 @@ variants:
   name_string: str_toby_default_brown_train_name
   strings:
     str_toby_default_brown_train_name: Toby the Tram Engine - Brown
-    str_toby_default_brown_train_single_livery_name: Toby the Tram Engine - Brown
     str_toby_default_brown_train_additional_text: Based on LNER J70 Class 0-6-0T
 - id: 1007
   vehicle: percy
@@ -153,7 +145,6 @@ variants:
   name_string: str_percy_default_green_train_name
   strings:
     str_percy_default_green_train_name: Percy the Small Engine - Green
-    str_percy_default_green_train_single_livery_name: Percy the Small Engine - Green
     str_percy_default_green_train_additional_text: Based on Avonside 0-4-0ST
 - id: 1008
   vehicle: gordon
@@ -175,7 +166,6 @@ variants:
   name_string: str_gordon_default_blue_train_name
   strings:
     str_gordon_default_blue_train_name: Gordon the Big Engine - Blue
-    str_gordon_default_blue_train_single_livery_name: Gordon the Big Engine - Blue
     str_gordon_default_blue_train_additional_text: Based on LNER Class A1/A3 4-6-2
 - id: 1009
   vehicle: smallccwagon
@@ -196,7 +186,6 @@ variants:
   name_string: str_smallccwagon_default_grey_train_name
   strings:
     str_smallccwagon_default_grey_train_name: 3 Plank Wagon - Grey
-    str_smallccwagon_default_grey_train_single_livery_name: 3 Plank Wagon - Grey
     str_smallccwagon_default_grey_train_additional_text: Based on Narrow Gauge freelance
       Tenmile open wagon kit
 - id: 1010
@@ -218,7 +207,6 @@ variants:
   name_string: str_thomas_default_blue_train_name
   strings:
     str_thomas_default_blue_train_name: Thomas the Tank Engine - Blue
-    str_thomas_default_blue_train_single_livery_name: Thomas the Tank Engine - Blue
     str_thomas_default_blue_train_additional_text: Based on LB&SCR E2 class 0-6-0T{}A
       Really Useful Engine
 - id: 1011
@@ -241,8 +229,6 @@ variants:
   strings:
     str_isabelle_default_cream_and_brown_train_name: Isabelle the Autocoach - Cream
       and Brown
-    str_isabelle_default_cream_and_brown_train_single_livery_name: Isabelle the Autocoach
-      - Cream and Brown
     str_isabelle_default_cream_and_brown_train_additional_text: Based on GWR autocoach
 - id: 1012
   vehicle: elsie
@@ -263,7 +249,6 @@ variants:
   name_string: str_elsie_default_wood_train_name
   strings:
     str_elsie_default_wood_train_name: Elsie - Wood
-    str_elsie_default_wood_train_single_livery_name: Elsie - Wood
     str_elsie_default_wood_train_additional_text: Based on GER Wisbech and Upwell
       Tramway luggage van No. 9
 - id: 1013
@@ -285,7 +270,6 @@ variants:
   name_string: str_mavis_default_black_train_name
   strings:
     str_mavis_default_black_train_name: Mavis the Quarry Engine - Black
-    str_mavis_default_black_train_single_livery_name: Mavis the Quarry Engine - Black
     str_mavis_default_black_train_additional_text: Based on the BR Class 04 0-6-0DM
 - id: 1014
   vehicle: utilityvan
@@ -306,7 +290,6 @@ variants:
   name_string: str_utilityvan_default_wood_train_name
   strings:
     str_utilityvan_default_wood_train_name: CCT/Utility Van - Wood
-    str_utilityvan_default_wood_train_single_livery_name: CCT/Utility Van - Wood
     str_utilityvan_default_wood_train_additional_text: Based on Southern Railway CCT
       Van
 - id: 1015
@@ -328,7 +311,6 @@ variants:
   name_string: str_diesel_default_black_train_name
   strings:
     str_diesel_default_black_train_name: Diesel - Black
-    str_diesel_default_black_train_single_livery_name: Diesel - Black
     str_diesel_default_black_train_additional_text: Based on BR Class 08{}Coughs and
       Sneazles Spread Diseasels
 - id: 1016
@@ -351,7 +333,6 @@ variants:
   name_string: str_henry_default_green_train_name
   strings:
     str_henry_default_green_train_name: Henry the Green Engine - Green
-    str_henry_default_green_train_single_livery_name: Henry the Green Engine - Green
     str_henry_default_green_train_additional_text: Based on LMS Stanier Class 5 "Black
       Five" 4-6-0
 - id: 1017
@@ -373,7 +354,6 @@ variants:
   name_string: str_henrietta_default_wood_train_name
   strings:
     str_henrietta_default_wood_train_name: Henrietta - Wood
-    str_henrietta_default_wood_train_single_livery_name: Henrietta - Wood
     str_henrietta_default_wood_train_additional_text: Based on GER Wisbech and Upwell
       Tramway 4-wheel coach
 - id: 1018
@@ -395,7 +375,6 @@ variants:
   name_string: str_toad_default_grey_train_name
   strings:
     str_toad_default_grey_train_name: Toad the Brakevan - Grey
-    str_toad_default_grey_train_single_livery_name: Toad the Brakevan - Grey
     str_toad_default_grey_train_additional_text: Based on GWR 16 ton van
 - id: 1019
   vehicle: neville
@@ -417,7 +396,6 @@ variants:
   name_string: str_neville_default_black_train_name
   strings:
     str_neville_default_black_train_name: Neville - Black
-    str_neville_default_black_train_single_livery_name: Neville - Black
     str_neville_default_black_train_additional_text: Based on SR Q1 0-6-0
 - id: 1020
   vehicle: bill_ben
@@ -438,8 +416,6 @@ variants:
   name_string: str_bill_ben_default_yellow_train_name
   strings:
     str_bill_ben_default_yellow_train_name: Bill and Ben the Twin Engines - Yellow
-    str_bill_ben_default_yellow_train_single_livery_name: Bill and Ben the Twin Engines
-      - Yellow
     str_bill_ben_default_yellow_train_additional_text: Based on Bagnall 0-4-0ST "Alfred"
       and "Judy"
 - id: 1021
@@ -461,7 +437,6 @@ variants:
   name_string: str_mavis_default_black_tram_name
   strings:
     str_mavis_default_black_tram_name: Mavis the Quarry Engine - Black
-    str_mavis_default_black_tram_single_livery_name: Mavis the Quarry Engine - Black
     str_mavis_default_black_tram_additional_text: Based on the BR Class 04 0-6-0DM
 - id: 1022
   vehicle: toby
@@ -482,5 +457,4 @@ variants:
   name_string: str_toby_default_brown_tram_name
   strings:
     str_toby_default_brown_tram_name: Toby the Tram Engine - Brown
-    str_toby_default_brown_tram_single_livery_name: Toby the Tram Engine - Brown
     str_toby_default_brown_tram_additional_text: Based on LNER J70 Class 0-6-0T
