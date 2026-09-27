@@ -1,6 +1,7 @@
 project:
   name: OpenTTE2
   build: True
+  docs: true
   grf_folder: src/grf
   sound_folder: src/sound
   palette: Sprites/ttd-newgrf-dos.gpl
