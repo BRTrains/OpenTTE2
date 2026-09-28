@@ -7,6 +7,7 @@ stats:
   train_type: COACH
   weight: 12
   capacity: 30
+  num_vehicles: 2
 
 cargo: [CC_PASSENGERS]
 dates:
@@ -16,7 +17,7 @@ profiles:
   - identifier: DEFAULT # An internal identifier used for matching with liveries
 
 liveries:
-  - name: Wood
+  - name: Orange
 
 additional_text:
   - Based on LBSC Stroudley Coaches
