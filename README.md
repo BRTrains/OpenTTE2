@@ -1,6 +1,6 @@
 # Sodor Railways Expansion - The Thomas The Tank Engine set for OpenTTD
 
-The Sodor Railways Expansion (OpenTTE) is a train graphis set (newGRF) for OpenTTD, including vehicles from the Thomas The Tank Engine universe
+The Sodor Railways Expansion (OpenTTE) is a train graphics set (newGRF) for OpenTTD, including vehicles from the Thomas The Tank Engine universe
 
 This set is intended to be used as an add-on expansion for BRTrains in order to allow for more complete gameplay, although it can also be played as a standalone set with some limitations. Use alongside other sets outside of the BRTrains group of newGRFs is not supported and you may fine graphical glitches or discrepancies in scale
 
