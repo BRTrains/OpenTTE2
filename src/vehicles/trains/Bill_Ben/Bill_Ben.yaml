@@ -26,5 +26,5 @@ additional_text:
   - Based on Bagnall 0-4-0ST ("Alfred" and "Judy")
 
 special_tags:
-  - operator/NWR
+  - operator/SCC
   - whyte/0-4-0ST # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
