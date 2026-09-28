@@ -1,0 +1,26 @@
+info:
+  identifier: BranchlineCoach # Unique indentifier for the class, used as a code reference
+  name: 2 axle Branchline Coach 
+
+stats:
+  vehicle_type: TRAIN
+  train_type: COACH
+  weight: 12
+  capacity: 30
+
+cargo: [CC_PASSENGERS]
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Orange
+  - name: Red
+
+additional_text:
+  - Based on LBSC Stroudley Coaches
+
+special_tags:
+  - operator/NWR
