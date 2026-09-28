@@ -1,0 +1,24 @@
+info:
+  identifier: Truck # Unique indentifier for the class, used as a code reference
+  name: 2 axle Plank Truck
+
+stats:
+  vehicle_type: TRAIN
+  train_type: WAGON
+  weight: 11
+  capacity: 20
+
+cargo: [CC_BULK, CC_NON_POURABLE, CC_PIECE_GOODS]
+dates:
+  introduction_date: 1
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Grey
+
+additional_text:
+  - Based on generic plank trucks
+
+special_tags:
+  - be careful with them!
