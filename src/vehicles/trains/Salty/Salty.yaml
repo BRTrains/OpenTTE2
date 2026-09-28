@@ -1,0 +1,32 @@
+info:
+  identifier: Salty # Unique indentifier for the class, used as a code reference
+  name: Salty the Dockyard Diesel
+
+stats:
+  vehicle_type: TRAIN
+  train_type: LOCOMOTIVE
+  power_type: DIESEL
+  power: 275
+  tractive_effort: 155.7
+  weight: 42.90 
+  speed: 40
+  num_vehicles: 1
+
+cargo: none
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Red
+
+additional_text:
+  - Based on BR Class 07
+  - Down by the dockside
+
+special_tags:
+  - operator/NWR
+  - NWR/2991
+  - whyte/0-6-0DE # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
