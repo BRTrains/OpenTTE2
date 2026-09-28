@@ -26,6 +26,5 @@ additional_text:
   - Based on LNER Class A4 4-6-2
 
 special_tags:
-  - operator/NWR
-  - NWR/4 # Optional for trains with a known number (eg "number/1" for Thomas)
+  - operator/Duke and Dutchess of Sodor
   - whyte/4-6-2 # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
