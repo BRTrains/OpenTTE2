@@ -1,0 +1,24 @@
+info:
+  identifier: LNBRVan # Unique indentifier for the class, used as a code reference
+  name: L&BR Van
+
+stats:
+  vehicle_type: TRAIN
+  train_type: WAGON
+  weight: 10
+  capacity: 20
+
+cargo: [CC_BULK, CC_NON_POURABLE, CC_PIECE_GOODS]
+dates:
+  introduction_date: 1
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Brown
+
+additional_text:
+  - Based on Lynton and Barnstaple Railway Vans
+
+special_tags:
+  - be careful with them!
