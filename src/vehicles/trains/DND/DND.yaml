@@ -1,0 +1,32 @@
+info:
+  identifier: DND # Unique indentifier for the class, used as a code reference
+  name: Donald and Douglas the Scottish twins
+
+stats:
+  vehicle_type: TRAIN
+  train_type: LOCOMOTIVE
+  power_type: STEAM
+  power: 1000
+  tractive_effort: 121.9
+  weight: 45.65
+  speed: 60
+  num_vehicles: 2
+
+cargo: none
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Red
+
+additional_text:
+  - Based on Furness Railway D5 0-6-0 # This is canon for the OpenTTE newGRF, and no argument will be taken
+
+special_tags:
+  - operator/NWR
+  - whyte/0-6-0 # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
+  - NWR/9,10 # Optional for trains with a known number (eg "number/1" for Thomas)
+  - BR/57646,57647
