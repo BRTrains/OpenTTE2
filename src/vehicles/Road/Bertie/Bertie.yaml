@@ -1,0 +1,32 @@
+info:
+  identifier: Bertie # Unique indentifier for the class, used as a code reference
+  name: Bertie the Bus
+
+stats:
+  vehicle_type: 
+  train_type: 
+  power_type: DIESEL
+  power: 200
+  tractive_effort: 20
+  weight: 3
+  speed: 60
+  num_vehicles: 1
+  capacity: 20
+
+cargo: [CC_PASSENGERS]
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Red
+
+additional_text:
+  - Based on Leyland Tiger type PS-1
+  - Lets have a race!
+
+special_tags:
+  - operator/Sodor Roadways
+  - Drivetrain/4x2 # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
