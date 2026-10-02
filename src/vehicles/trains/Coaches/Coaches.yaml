@@ -1,5 +1,5 @@
 info:
-  identifier: BranchlineCoach # Unique indentifier for the class, used as a code reference
+  identifier: Coaches # Unique indentifier for the class, used as a code reference
   name: Express Coach 
 
 stats:
