@@ -9,7 +9,7 @@ stats:
   power: 400
   tractive_effort: 120.1
   weight: 50.7
-  speed: 30
+  speed: 50
   num_vehicles: 1
 
 cargo: none
