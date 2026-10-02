@@ -18,6 +18,7 @@ profiles:
 
 liveries:
   - name: Orange
+    sprite_override: [1, 1]
 
 additional_text:
   - Based on LBSC Stroudley Coaches
