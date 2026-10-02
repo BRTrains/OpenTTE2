@@ -15,8 +15,8 @@ profiles:
   - identifier: DEFAULT # An internal identifier used for matching with liveries
 
 liveries:
-  - name: Grey
   - name: Brown
+  # - name: Grey
 
 additional_text:
   - Based on generic Box Vans
