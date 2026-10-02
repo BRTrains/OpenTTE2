@@ -8,7 +8,7 @@ stats:
   power_type: STEAM
   power: 400
   tractive_effort: 120.1
-  weight: 50.7 t
+  weight: 50.7
   speed: 30
   num_vehicles: 1
 
