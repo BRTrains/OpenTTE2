@@ -42,11 +42,11 @@ sort(FEAT_TRAINS, [
 
   // -- coaches --
   // Annie & Clarabel
-  annie_clarabel_default_wood_train,
+  annie_clarabel_default_orange_train,
   // Henrietta
   henrietta_default_wood_train,
-  // Isabelle the Autocoach
-  isabelle_default_cream_and_brown_train,
+  // Isabel the Autocoach
+  isabel_default_cream_and_brown_train,
 
   // -- wagons --
   // 3 Plank Wagon
