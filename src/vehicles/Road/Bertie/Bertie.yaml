@@ -3,8 +3,8 @@ info:
   name: Bertie the Bus
 
 stats:
-  vehicle_type: 
-  train_type: 
+  vehicle_type: ROAD
+  train_type: MULTIPLE_UNIT
   power_type: DIESEL
   power: 200
   tractive_effort: 20
