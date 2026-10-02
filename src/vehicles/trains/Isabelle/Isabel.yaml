@@ -1,6 +1,6 @@
 info: # this is a push pull wagon so yeah
-  identifier: isabelle # Unique indentifier for the class, used as a code reference
-  name: Isabelle the Autocoach
+  identifier: isabel # Unique indentifier for the class, used as a code reference
+  name: Isabel the Autocoach
 
 stats:
   vehicle_type: TRAIN

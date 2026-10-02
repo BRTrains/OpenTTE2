@@ -1,0 +1,33 @@
+info:
+  identifier: Daisy # Unique indentifier for the class, used as a code reference
+  name: Daisy the Diesel Railcar
+
+stats:
+  vehicle_type: TRAIN
+  train_type: LOCOMOTIVE
+  power_type: DIESEL
+  power: 350
+  tractive_effort: 20
+  weight: 37
+  speed: 70
+  num_vehicles: 1
+  capacity: 50
+
+cargo: [CC_PASSENGERS]
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Green
+
+additional_text:
+  - Based on BR Class 101
+  - its bad for my swerves!
+
+special_tags:
+  - operator/NWR
+  - NWR/D1
+  - Commonwealth/Bo-Bo # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)

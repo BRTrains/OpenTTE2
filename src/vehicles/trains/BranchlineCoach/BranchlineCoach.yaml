@@ -1,13 +1,12 @@
 info:
-  identifier: annie_clarabel # Unique indentifier for the class, used as a code reference
-  name: Annie & Clarabel
+  identifier: BranchlineCoach # Unique indentifier for the class, used as a code reference
+  name: 2 axle Branchline Coach 
 
 stats:
   vehicle_type: TRAIN
   train_type: COACH
   weight: 12
   capacity: 30
-  num_vehicles: 2
 
 cargo: [CC_PASSENGERS]
 dates:
@@ -18,6 +17,7 @@ profiles:
 
 liveries:
   - name: Orange
+  - name: Red
 
 additional_text:
   - Based on LBSC Stroudley Coaches

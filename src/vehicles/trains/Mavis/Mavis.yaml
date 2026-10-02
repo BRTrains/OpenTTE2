@@ -5,7 +5,7 @@ info:
 stats:
   vehicle_type: TRAIN
   train_type: LOCOMOTIVE
-  power_type: STEAM
+  power_type: DIESEL
   power: 154
   tractive_effort: 39.7
   weight: 30.2

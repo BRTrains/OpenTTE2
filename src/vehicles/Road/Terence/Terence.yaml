@@ -1,0 +1,31 @@
+info: # HEAVILY IMCOMPLETE!!!
+  identifier: Terence # Unique indentifier for the class, used as a code reference
+  name: Terence the Tractor
+
+stats:
+  vehicle_type: 
+  train_type: 
+  power_type: DIESEL
+  power: 200
+  tractive_effort: 20
+  weight: 3
+  speed: 20
+  num_vehicles: 1
+  capacity: 
+
+cargo: 
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Orange
+
+additional_text:
+  - Based on ??? no one knows
+  - go anywhere, do anything
+
+special_tags:
+  - motive/Catterpillar Treads # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)

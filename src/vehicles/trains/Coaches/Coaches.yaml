@@ -1,13 +1,12 @@
 info:
-  identifier: annie_clarabel # Unique indentifier for the class, used as a code reference
-  name: Annie & Clarabel
+  identifier: BranchlineCoach # Unique indentifier for the class, used as a code reference
+  name: Express Coach 
 
 stats:
   vehicle_type: TRAIN
   train_type: COACH
-  weight: 12
-  capacity: 30
-  num_vehicles: 2
+  weight: 30
+  capacity: 70
 
 cargo: [CC_PASSENGERS]
 dates:
@@ -18,9 +17,11 @@ profiles:
 
 liveries:
   - name: Orange
+  - name: Red and white
+  - name: Green and white
 
 additional_text:
-  - Based on LBSC Stroudley Coaches
+  - Based on LMS suburban coaches, or SR maunsell Coaches
 
 special_tags:
   - operator/NWR

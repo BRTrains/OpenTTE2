@@ -1,0 +1,31 @@
+info:
+  identifier: Nia # unique indentifier for the class, used as a code reference
+  name: Nia the Kenyan Engine
+
+stats:
+  vehicle_type: TRAIN
+  train_type: LOCOMOTIVE
+  power_type: STEAM
+  power: 400
+  tractive_effort: 120.1
+  weight: 50.7 t
+  speed: 30
+  num_vehicles: 1
+
+cargo: none
+dates:
+  introduction_date: 1
+
+profiles:
+  - identifier: DEFAULT # An internal identifier used for matching with liveries
+
+liveries:
+  - name: Orange
+
+additional_text:
+  - Based on KUR ED1 class
+
+special_tags:
+  - operator/NWR
+  - NWR/18 # Optional for trains with a known number (eg "number/1" for Thomas)
+  - whyte/2-6-2T # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
