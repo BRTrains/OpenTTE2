@@ -1,0 +1,22 @@
+info:
+  identifier: bogieTruck # Unique indentifier for the class, used as a code reference
+  name: L&BR bogie truck
+
+stats:
+  vehicle_type: TRAIN
+  train_type: WAGON
+  weight: 22
+  capacity: 40
+
+cargo: [CC_BULK, CC_NON_POURABLE, CC_PIECE_GOODS]
+dates:
+  introduction_date: 1
+
+liveries:
+  - name: Grey
+
+additional_text:
+  - Based on L&BR bogie Trucks
+
+special_tags:
+  - be careful with them!
