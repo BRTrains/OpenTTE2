@@ -1,6 +1,6 @@
 info:
   identifier: Bruno # Unique indentifier for the class, used as a code reference
-  name: Bruno the Caboose
+  name: Bruno the Sodor Lines Caboose
 
 stats:
   vehicle_type: TRAIN
