@@ -7,7 +7,7 @@ stats:
   train_type: LOCOMOTIVE
   power_type: STEAM
   power: 200
-  tractive_effort: 94.8
+  tractive_effort: 62
   weight: 59.9
   speed: 80
   num_vehicles: 1
