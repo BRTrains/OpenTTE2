@@ -26,4 +26,4 @@ additional_text:
 special_tags:
   - operator/NWR
   - NWR/D5 # Optional for trains with a known number (eg "number/1" for Thomas)
-  - Commonwealth/Co-Bo # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas
+  - Commonwealth/Bo-Bo 
