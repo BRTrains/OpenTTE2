@@ -26,4 +26,4 @@ additional_text:
 special_tags:
   - operator/NWR
   - NWR/3 # Optional for trains with a known number (eg "number/1" for Thomas)
-  - whyte/4-6-0 # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
+  - whyte/4-6-0 # he is a 4-6-2 for the pacific old shape version Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
