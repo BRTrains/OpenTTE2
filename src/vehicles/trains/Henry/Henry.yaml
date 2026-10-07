@@ -6,7 +6,7 @@ stats:
   vehicle_type: TRAIN
   train_type: LOCOMOTIVE
   power_type: STEAM
-  power: 1500
+  power: 1500 # 1000 for old shape
   tractive_effort: 113.2
   weight: 84
   speed: 80
