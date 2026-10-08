@@ -1,0 +1,29 @@
+info:
+  identifier: Molly # Unique indentifier for the class, used as a code reference
+  name: Molly the Yellow Engine
+
+stats:
+  vehicle_type: TRAIN
+  train_type: LOCOMOTIVE
+  power_type: STEAM
+  power: 700
+  tractive_effort: 76
+  weight: 52.2
+  speed: 70
+  num_vehicles: 2
+
+cargo: none
+dates:
+  introduction_date: 1
+
+
+liveries:
+  - name: Yellow
+
+additional_text:
+  - Based on GER D56 4-4-0
+
+
+special_tags:
+  - operator/NWR
+  - whyte/4-4-0 # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)

@@ -7,7 +7,7 @@ stats:
   train_type: LOCOMOTIVE
   power_type: DIESEL
   power: 154
-  tractive_effort: 39.7
+  tractive_effort: 75
   weight: 30.2
   speed: 35
   num_vehicles: 1

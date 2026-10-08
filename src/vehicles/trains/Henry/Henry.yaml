@@ -6,7 +6,7 @@ stats:
   vehicle_type: TRAIN
   train_type: LOCOMOTIVE
   power_type: STEAM
-  power: 1500
+  power: 1500 # 1000 for old shape
   tractive_effort: 113.2
   weight: 84
   speed: 80
@@ -15,15 +15,28 @@ stats:
 cargo: none
 dates:
   introduction_date: 1
-
+profiles:
+  -identifier: oldP
+    name: "old shape, pacific"
+    power: 1000
+  -identifier: old
+    name: "old shape"
+    power: 1000
+  -identifier: New
+    name: "New shape"
+    power: 1500
+  -identifier: NewS
+    name: "third shape"
+    power: 1500
 
 liveries:
   - name: Green
 
 additional_text:
-  - Based on LMS Stanier Class 5 "Black Five" 4-6-0
+  - Based on rejected GNR A1 pacific plans
+  - later rebuilt as LMS Stanier Class 5 "Black Five" 4-6-0
 
 special_tags:
   - operator/NWR
   - NWR/3 # Optional for trains with a known number (eg "number/1" for Thomas)
-  - whyte/4-6-0 # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
+  - whyte/4-6-0 # he is a 4-6-2 for the pacific old shape version Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)

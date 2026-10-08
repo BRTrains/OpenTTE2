@@ -1,0 +1,22 @@
+info:
+  identifier: flatbed # Unique indentifier for the class, used as a code reference
+  name: 2 axle flatbed
+
+stats:
+  vehicle_type: TRAIN
+  train_type: WAGON
+  weight: 8
+  capacity: 20
+
+cargo: [CC_BULK, CC_NON_POURABLE, CC_PIECE_GOODS]
+dates:
+  introduction_date: 1
+
+liveries:
+  - name: Grey
+
+additional_text:
+  - Based on the chassis of generic 2 axle wagons
+
+special_tags:
+  - be careful with them!

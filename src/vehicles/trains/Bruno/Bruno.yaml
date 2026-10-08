@@ -1,0 +1,22 @@
+info:
+  identifier: Bruno # Unique indentifier for the class, used as a code reference
+  name: Bruno the Sodor Lines Caboose
+
+stats:
+  vehicle_type: TRAIN
+  train_type: WAGON
+  weight: 22.3
+  capacity: 0
+
+cargo: none
+dates:
+  introduction_date: 1
+
+liveries:
+  - name: Red
+
+additional_text:
+  - Based on a shortened centralia caboose
+
+special_tags:
+  - operator/NWR

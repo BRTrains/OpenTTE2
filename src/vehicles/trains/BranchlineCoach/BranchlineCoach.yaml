@@ -16,9 +16,10 @@ dates:
 liveries:
   - name: Orange
   - name: Red
+  - name: Green and cream # these are the old coaches
 
 additional_text:
-  - Based on LBSC Stroudley Coaches
+  - Based on LBSC Stroudley Coaches/GNR Metropolitan Coaches
 
 special_tags:
   - operator/NWR

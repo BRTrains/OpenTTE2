@@ -1,0 +1,24 @@
+info:
+  identifier: Longflatbed # Unique indentifier for the class, used as a code reference
+  name: Long Flatbed
+
+stats:
+  vehicle_type: TRAIN
+  train_type: WAGON
+  weight: 10
+  capacity: 30
+
+cargo: [CC_MAIL, CC_PIECE_GOODS, CC_EXPRESS, CC_COVERED, CC_POTABLE]
+dates:
+  introduction_date: 1
+
+
+liveries:
+  - name: Grey # there are pole variants too
+  - name: Green
+
+additional_text:
+  - Based on the chassis of a Southern Railway CCT Van
+
+special_tags:
+  - operator/NWR
