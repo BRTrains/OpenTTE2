@@ -22,10 +22,10 @@ profiles:
   -identifier: old
     name: "old shape"
     power: 1000
-  -identifier: New Shape
+  -identifier: New
     name: "New shape"
     power: 1500
-  -identifier: New Shape
+  -identifier: NewS
     name: "third shape"
     power: 1500
 
