@@ -22,12 +22,15 @@ profiles:
   - identifier: old
     name: "old shape"
     power: 1000
+    sprite_group: oldP
   - identifier: New
     name: "New shape"
     power: 1500
+    sprite_group: oldP
   - identifier: NewS
     name: "third shape"
     power: 1500
+    sprite_group: oldP
 
 liveries:
   - name: Green
