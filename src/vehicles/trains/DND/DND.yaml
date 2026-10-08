@@ -12,6 +12,10 @@ stats:
   speed: 60
   num_vehicles: 2
 
+# The sheet draws the twins' locomotives first (y=13, y=33) and their tenders after (y=53,
+# y=69, y=85), so the default pair would give this single-livery unit two locomotives.
+sprite_override: [1, 3]
+
 cargo: none
 dates:
   introduction_date: 1
