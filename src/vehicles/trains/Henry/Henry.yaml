@@ -15,7 +15,20 @@ stats:
 cargo: none
 dates:
   introduction_date: 1
-
+profiles:
+  -identifier: oldP
+    name: "old shape, pacific"
+    power: 1000
+  profiles:
+  -identifier: old
+    name: "old shape"
+    power: 1000
+  -identifier: New Shape
+    name: "New shape"
+    power: 1500
+  -identifier: New Shape
+    name: "third shape"
+    power: 1500
 
 liveries:
   - name: Green
