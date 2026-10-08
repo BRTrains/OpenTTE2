@@ -16,10 +16,11 @@ dates:
 liveries:
   - name: Orange
   - name: Orange Brake
-  - name: Red
-  - name: Red Brake
   - name: Green and Cream
   - name: Green and Cream Brake # these are the old coaches
+  - name: Red
+  - name: Red Brake
+
 
 additional_text:
   - Based on LBSC Stroudley Coaches/GNR Metropolitan Coaches
