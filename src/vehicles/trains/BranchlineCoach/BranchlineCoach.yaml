@@ -6,7 +6,7 @@ stats:
   vehicle_type: TRAIN
   train_type: COACH
   weight: 12
-  capacity: 30
+  capacity: 40
 
 cargo: [CC_PASSENGERS]
 dates:
@@ -15,8 +15,11 @@ dates:
 
 liveries:
   - name: Orange
+  - name: Orange Brake
   - name: Red
-  - name: Green and cream # these are the old coaches
+  - name: Red Brake
+  - name: Green and Cream
+  - name: Green and Cream Brake # these are the old coaches
 
 additional_text:
   - Based on LBSC Stroudley Coaches/GNR Metropolitan Coaches
