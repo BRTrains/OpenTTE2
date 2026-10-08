@@ -19,7 +19,11 @@ variants:
   identifier: james_default_red_train
   name_string: str_james_default_red_train_name
   strings:
-    str_james_default_red_train_name: James the Red Engine - Red
+    str_james_default_red_train_name: James the Red Engine - {SILVER}Engine + Tender{BLACK}
+      - {GOLD}Red
+    str_james_default_red_train_group_name: James the Red Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Red
+    str_james_default_red_train_nested_name: '{SILVER}Engine + Tender{BLACK} - {GOLD}Red'
     str_james_default_red_train_additional_text: Based on Furness Railway D5 0-6-0
 - id: 1002
   vehicle: murdoch
@@ -40,7 +44,12 @@ variants:
   identifier: murdoch_default_orange_train
   name_string: str_murdoch_default_orange_train_name
   strings:
-    str_murdoch_default_orange_train_name: Murdoch the Mighty Engine - Orange
+    str_murdoch_default_orange_train_name: Murdoch the Mighty Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Orange
+    str_murdoch_default_orange_train_group_name: Murdoch the Mighty Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Orange
+    str_murdoch_default_orange_train_nested_name: '{SILVER}Engine + Tender{BLACK}
+      - {GOLD}Orange'
     str_murdoch_default_orange_train_additional_text: Based on BR Standard Class 9F
       2-10-0
 - id: 1003
@@ -61,17 +70,22 @@ variants:
   identifier: duck_default_gwr_green_train
   name_string: str_duck_default_gwr_green_train_name
   strings:
-    str_duck_default_gwr_green_train_name: Duck the Great Western Engine - GWR Green
+    str_duck_default_gwr_green_train_name: Duck the Great Western Engine - {SILVER}Tank
+      Engine{BLACK} - {GOLD}GWR Green
+    str_duck_default_gwr_green_train_group_name: Duck the Great Western Engine - {SILVER}Tank
+      Engine{BLACK} - {GOLD}GWR Green
+    str_duck_default_gwr_green_train_nested_name: '{SILVER}Tank Engine{BLACK} - {GOLD}GWR
+      Green'
     str_duck_default_gwr_green_train_additional_text: Based on GWR 5700 class 0-6-0PT{}They
       say he waddles.
-- id: 1004
+- id: null
   vehicle: annie_clarabel
   profile: default
   livery: wood
   vehicle_type: train
   generation: 1
   locked: false
-  active: true
+  active: false
   deprecated: false
   compatibility:
     capacity: 30
@@ -104,7 +118,11 @@ variants:
   identifier: edward_default_blue_train
   name_string: str_edward_default_blue_train_name
   strings:
-    str_edward_default_blue_train_name: Edward the Blue Engine - Blue
+    str_edward_default_blue_train_name: Edward the Blue Engine - {SILVER}Engine +
+      Tender{BLACK} - {GOLD}Blue
+    str_edward_default_blue_train_group_name: Edward the Blue Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Blue
+    str_edward_default_blue_train_nested_name: '{SILVER}Engine + Tender{BLACK} - {GOLD}Blue'
     str_edward_default_blue_train_additional_text: Based on Furness Railway K2 4-4-0
 - id: 1006
   vehicle: toby
@@ -124,7 +142,11 @@ variants:
   identifier: toby_default_brown_train
   name_string: str_toby_default_brown_train_name
   strings:
-    str_toby_default_brown_train_name: Toby the Tram Engine - Brown
+    str_toby_default_brown_tram_group_name: Toby the Tram Engine - {SILVER}Tank Engine{BLACK}
+      - {GOLD}Brown
+    str_toby_default_brown_tram_nested_name: '{SILVER}Tank Engine{BLACK} - {GOLD}Brown'
+    str_toby_default_brown_train_name: Toby the Tram Engine - {SILVER}Tank Engine{BLACK}
+      - {GOLD}Brown
     str_toby_default_brown_train_additional_text: Based on LNER J70 Class 0-6-0T
 - id: 1007
   vehicle: percy
@@ -144,7 +166,11 @@ variants:
   identifier: percy_default_green_train
   name_string: str_percy_default_green_train_name
   strings:
-    str_percy_default_green_train_name: Percy the Small Engine - Green
+    str_percy_default_green_train_name: Percy the Small Engine - {SILVER}Tank Engine{BLACK}
+      - {GOLD}Green
+    str_percy_default_green_train_group_name: Percy the Small Engine - {SILVER}Tank
+      Engine{BLACK} - {GOLD}Green
+    str_percy_default_green_train_nested_name: '{SILVER}Tank Engine{BLACK} - {GOLD}Green'
     str_percy_default_green_train_additional_text: Based on Avonside 0-4-0ST
 - id: 1008
   vehicle: gordon
@@ -165,7 +191,11 @@ variants:
   identifier: gordon_default_blue_train
   name_string: str_gordon_default_blue_train_name
   strings:
-    str_gordon_default_blue_train_name: Gordon the Big Engine - Blue
+    str_edward_default_blue_train_nested_name: '{SILVER}Engine + Tender{BLACK} - {GOLD}Blue'
+    str_gordon_default_blue_train_name: Gordon the Big Engine - {SILVER}Engine + Tender{BLACK}
+      - {GOLD}Blue
+    str_gordon_default_blue_train_group_name: Gordon the Big Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Blue
     str_gordon_default_blue_train_additional_text: Based on LNER Class A1/A3 4-6-2
 - id: 1009
   vehicle: smallccwagon
@@ -185,7 +215,11 @@ variants:
   identifier: smallccwagon_default_grey_train
   name_string: str_smallccwagon_default_grey_train_name
   strings:
-    str_smallccwagon_default_grey_train_name: 3 Plank Wagon - Grey
+    str_flatbed_default_grey_train_nested_name: '{SILVER}wagon{BLACK} - {GOLD}Grey'
+    str_smallccwagon_default_grey_train_name: 3 Plank Wagon - {SILVER}wagon{BLACK}
+      - {GOLD}Grey
+    str_smallccwagon_default_grey_train_group_name: 3 Plank Wagon - {SILVER}wagon{BLACK}
+      - {GOLD}Grey
     str_smallccwagon_default_grey_train_additional_text: Based on Narrow Gauge freelance
       Tenmile open wagon kit
 - id: 1010
@@ -206,17 +240,21 @@ variants:
   identifier: thomas_default_blue_train
   name_string: str_thomas_default_blue_train_name
   strings:
-    str_thomas_default_blue_train_name: Thomas the Tank Engine - Blue
+    str_thomas_default_blue_train_name: Thomas the Tank Engine - {SILVER}Tank Engine{BLACK}
+      - {GOLD}Blue
+    str_thomas_default_blue_train_group_name: Thomas the Tank Engine - {SILVER}Tank
+      Engine{BLACK} - {GOLD}Blue
+    str_thomas_default_blue_train_nested_name: '{SILVER}Tank Engine{BLACK} - {GOLD}Blue'
     str_thomas_default_blue_train_additional_text: Based on LB&SCR E2 class 0-6-0T{}A
       Really Useful Engine
-- id: 1011
+- id: null
   vehicle: isabelle
   profile: default
   livery: cream and brown
   vehicle_type: train
   generation: 1
   locked: false
-  active: true
+  active: false
   deprecated: false
   compatibility:
     capacity: 30
@@ -248,7 +286,9 @@ variants:
   identifier: elsie_default_wood_train
   name_string: str_elsie_default_wood_train_name
   strings:
-    str_elsie_default_wood_train_name: Elsie - Wood
+    str_utilityvan_default_wood_train_nested_name: '{SILVER}wagon{BLACK} - {GOLD}Wood'
+    str_elsie_default_wood_train_name: Elsie - {SILVER}wagon{BLACK} - {GOLD}Wood
+    str_elsie_default_wood_train_group_name: Elsie - {SILVER}wagon{BLACK} - {GOLD}Wood
     str_elsie_default_wood_train_additional_text: Based on GER Wisbech and Upwell
       Tramway luggage van No. 9
 - id: 1013
@@ -269,7 +309,11 @@ variants:
   identifier: mavis_default_black_train
   name_string: str_mavis_default_black_train_name
   strings:
-    str_mavis_default_black_train_name: Mavis the Quarry Engine - Black
+    str_diesel_default_black_train_nested_name: '{SILVER}Locomotive{BLACK} - {GOLD}Black'
+    str_mavis_default_black_tram_group_name: Mavis the Quarry Engine - {SILVER}Locomotive{BLACK}
+      - {GOLD}Black
+    str_mavis_default_black_train_name: Mavis the Quarry Engine - {SILVER}Locomotive{BLACK}
+      - {GOLD}Black
     str_mavis_default_black_train_additional_text: Based on the BR Class 04 0-6-0DM
 - id: 1014
   vehicle: utilityvan
@@ -289,7 +333,11 @@ variants:
   identifier: utilityvan_default_wood_train
   name_string: str_utilityvan_default_wood_train_name
   strings:
-    str_utilityvan_default_wood_train_name: CCT/Utility Van - Wood
+    str_utilityvan_default_wood_train_name: CCT/Utility Van - {SILVER}wagon{BLACK}
+      - {GOLD}Wood
+    str_utilityvan_default_wood_train_group_name: CCT/Utility Van - {SILVER}wagon{BLACK}
+      - {GOLD}Wood
+    str_utilityvan_default_wood_train_nested_name: '{SILVER}wagon{BLACK} - {GOLD}Wood'
     str_utilityvan_default_wood_train_additional_text: Based on Southern Railway CCT
       Van
 - id: 1015
@@ -310,17 +358,20 @@ variants:
   identifier: diesel_default_black_train
   name_string: str_diesel_default_black_train_name
   strings:
-    str_diesel_default_black_train_name: Diesel - Black
+    str_diesel_default_black_train_name: Diesel - {SILVER}Locomotive{BLACK} - {GOLD}Black
+    str_diesel_default_black_train_group_name: Diesel - {SILVER}Locomotive{BLACK}
+      - {GOLD}Black
+    str_diesel_default_black_train_nested_name: '{SILVER}Locomotive{BLACK} - {GOLD}Black'
     str_diesel_default_black_train_additional_text: Based on BR Class 08{}Coughs and
       Sneazles Spread Diseasels
-- id: 1016
+- id: null
   vehicle: henry
   profile: default
   livery: green
   vehicle_type: train
   generation: 1
   locked: false
-  active: true
+  active: false
   deprecated: false
   compatibility:
     capacity: 0
@@ -353,7 +404,10 @@ variants:
   identifier: henrietta_default_wood_train
   name_string: str_henrietta_default_wood_train_name
   strings:
-    str_henrietta_default_wood_train_name: Henrietta - Wood
+    str_henrietta_default_wood_train_name: Henrietta - {SILVER}coach{BLACK} - {GOLD}Wood
+    str_henrietta_default_wood_train_group_name: Henrietta - {SILVER}coach{BLACK}
+      - {GOLD}Wood
+    str_henrietta_default_wood_train_nested_name: '{SILVER}coach{BLACK} - {GOLD}Wood'
     str_henrietta_default_wood_train_additional_text: Based on GER Wisbech and Upwell
       Tramway 4-wheel coach
 - id: 1018
@@ -374,7 +428,10 @@ variants:
   identifier: toad_default_grey_train
   name_string: str_toad_default_grey_train_name
   strings:
-    str_toad_default_grey_train_name: Toad the Brakevan - Grey
+    str_flatbed_default_grey_train_nested_name: '{SILVER}wagon{BLACK} - {GOLD}Grey'
+    str_toad_default_grey_train_name: Toad the Brakevan - {SILVER}wagon{BLACK} - {GOLD}Grey
+    str_toad_default_grey_train_group_name: Toad the Brakevan - {SILVER}wagon{BLACK}
+      - {GOLD}Grey
     str_toad_default_grey_train_additional_text: Based on GWR 16 ton van
 - id: 1019
   vehicle: neville
@@ -395,7 +452,11 @@ variants:
   identifier: neville_default_black_train
   name_string: str_neville_default_black_train_name
   strings:
-    str_neville_default_black_train_name: Neville - Black
+    str_hiro_default_black_train_nested_name: '{SILVER}Engine + Tender{BLACK} - {GOLD}Black'
+    str_neville_default_black_train_name: Neville - {SILVER}Engine + Tender{BLACK}
+      - {GOLD}Black
+    str_neville_default_black_train_group_name: Neville - {SILVER}Engine + Tender{BLACK}
+      - {GOLD}Black
     str_neville_default_black_train_additional_text: Based on SR Q1 0-6-0
 - id: 1020
   vehicle: bill_ben
@@ -410,12 +471,16 @@ variants:
     capacity: 0
     articulated_count: 1
     lengths:
-    - 8
+    - 3
   archive: generated_variants/1020_bill_ben_default_yellow_train.gnml
   identifier: bill_ben_default_yellow_train
   name_string: str_bill_ben_default_yellow_train_name
   strings:
-    str_bill_ben_default_yellow_train_name: Bill and Ben the Twin Engines - Yellow
+    str_bill_ben_default_yellow_train_name: Bill and Ben the Twin Engines - {SILVER}Tank
+      Engine{BLACK} - {GOLD}Yellow
+    str_bill_ben_default_yellow_train_group_name: Bill and Ben the Twin Engines -
+      {SILVER}Tank Engine{BLACK} - {GOLD}Yellow
+    str_bill_ben_default_yellow_train_nested_name: '{SILVER}Tank Engine{BLACK} - {GOLD}Yellow'
     str_bill_ben_default_yellow_train_additional_text: Based on Bagnall 0-4-0ST "Alfred"
       and "Judy"
 - id: 1021
@@ -436,7 +501,11 @@ variants:
   identifier: mavis_default_black_tram
   name_string: str_mavis_default_black_tram_name
   strings:
-    str_mavis_default_black_tram_name: Mavis the Quarry Engine - Black
+    str_diesel_default_black_train_nested_name: '{SILVER}Locomotive{BLACK} - {GOLD}Black'
+    str_mavis_default_black_tram_name: Mavis the Quarry Engine - {SILVER}Locomotive{BLACK}
+      - {GOLD}Black
+    str_mavis_default_black_tram_group_name: Mavis the Quarry Engine - {SILVER}Locomotive{BLACK}
+      - {GOLD}Black
     str_mavis_default_black_tram_additional_text: Based on the BR Class 04 0-6-0DM
 - id: 1022
   vehicle: toby
@@ -456,5 +525,1014 @@ variants:
   identifier: toby_default_brown_tram
   name_string: str_toby_default_brown_tram_name
   strings:
-    str_toby_default_brown_tram_name: Toby the Tram Engine - Brown
+    str_toby_default_brown_tram_name: Toby the Tram Engine - {SILVER}Tank Engine{BLACK}
+      - {GOLD}Brown
+    str_toby_default_brown_tram_group_name: Toby the Tram Engine - {SILVER}Tank Engine{BLACK}
+      - {GOLD}Brown
+    str_toby_default_brown_tram_nested_name: '{SILVER}Tank Engine{BLACK} - {GOLD}Brown'
     str_toby_default_brown_tram_additional_text: Based on LNER J70 Class 0-6-0T
+- id: 1004
+  vehicle: bertie
+  profile: default
+  livery: red
+  vehicle_type: road
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 20
+    articulated_count: 1
+    lengths:
+    - 5
+  archive: generated_variants/1004_bertie_default_red_road.gnml
+  identifier: bertie_default_red_road
+  name_string: str_bertie_default_red_road_name
+  strings:
+    str_bertie_default_red_road_name: Bertie the Bus - {SILVER}1-car{BLACK} - {GOLD}Red
+    str_bertie_default_red_road_group_name: Bertie the Bus - {SILVER}1-car{BLACK}
+      - {GOLD}Red
+    str_bertie_default_red_road_nested_name: '{SILVER}1-car{BLACK} - {GOLD}Red'
+    str_bertie_default_red_road_additional_text: Based on Leyland Tiger type PS-1{}Lets
+      have a race!
+- id: 1011
+  vehicle: terence
+  profile: default
+  livery: orange
+  vehicle_type: road
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths: []
+  archive: generated_variants/1011_terence_default_orange_road.gnml
+  identifier: terence_default_orange_road
+  name_string: str_terence_default_orange_road_name
+  strings:
+    str_terence_default_orange_road_name: Terence the Tractor - {SILVER}Locomotive{BLACK}
+      - {GOLD}Orange
+    str_terence_default_orange_road_group_name: Terence the Tractor - {SILVER}Locomotive{BLACK}
+      - {GOLD}Orange
+    str_terence_default_orange_road_nested_name: '{SILVER}Locomotive{BLACK} - {GOLD}Orange'
+    str_terence_default_orange_road_additional_text: Based on ??? no one knows{}go
+      anywhere do anything
+- id: 1016
+  vehicle: rosie
+  profile: default
+  livery: lavender
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths: []
+  archive: generated_variants/1016_rosie_default_lavender_train.gnml
+  identifier: rosie_default_lavender_train
+  name_string: str_rosie_default_lavender_train_name
+  strings:
+    str_rosie_default_lavender_train_name: Rosie the Dock Tank Engine - {SILVER}Tank
+      Engine{BLACK} - {GOLD}Lavender
+    str_rosie_default_lavender_train_group_name: Rosie the Dock Tank Engine - {SILVER}Tank
+      Engine{BLACK} - {GOLD}Lavender
+    str_rosie_default_lavender_train_nested_name: '{SILVER}Tank Engine{BLACK} - {GOLD}Lavender'
+    str_rosie_default_lavender_train_additional_text: Based on USATC S100 SR variant
+- id: 1023
+  vehicle: rosie
+  profile: default
+  livery: red
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths: []
+  archive: generated_variants/1023_rosie_default_red_train.gnml
+  identifier: rosie_default_red_train
+  name_string: str_rosie_default_red_train_name
+  strings:
+    str_rosie_default_red_train_name: Rosie the Dock Tank Engine - {SILVER}Tank Engine{BLACK}
+      - {GOLD}Red
+    str_rosie_default_red_train_group_name: Rosie the Dock Tank Engine - {SILVER}Tank
+      Engine{BLACK} - {GOLD}Red
+    str_rosie_default_red_train_nested_name: '{SILVER}Tank Engine{BLACK} - {GOLD}Red'
+    str_rosie_default_red_train_additional_text: Based on USATC S100 SR variant
+- id: 1024
+  vehicle: derek
+  profile: default
+  livery: green
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths: []
+  archive: generated_variants/1024_derek_default_green_train.gnml
+  identifier: derek_default_green_train
+  name_string: str_derek_default_green_train_name
+  strings:
+    str_derek_default_green_train_name: Derek the Paxman Diesel - {SILVER}Locomotive{BLACK}
+      - {GOLD}Green
+    str_derek_default_green_train_group_name: Derek the Paxman Diesel - {SILVER}Locomotive{BLACK}
+      - {GOLD}Green
+    str_derek_default_green_train_nested_name: '{SILVER}Locomotive{BLACK} - {GOLD}Green'
+    str_derek_default_green_train_additional_text: Based on Clayton Type 1
+- id: 1025
+  vehicle: daisy
+  profile: default
+  livery: green
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 50
+    articulated_count: 1
+    lengths:
+    - 8
+  archive: generated_variants/1025_daisy_default_green_train.gnml
+  identifier: daisy_default_green_train
+  name_string: str_daisy_default_green_train_name
+  strings:
+    str_daisy_default_green_train_name: Daisy the Diesel Railcar - {SILVER}1-car{BLACK}
+      - {GOLD}Green
+    str_daisy_default_green_train_group_name: Daisy the Diesel Railcar - {SILVER}1-car{BLACK}
+      - {GOLD}Green
+    str_daisy_default_green_train_nested_name: '{SILVER}1-car{BLACK} - {GOLD}Green'
+    str_daisy_default_green_train_additional_text: Based on BR Class 101{}its bad
+      for my swerves!
+- id: 1026
+  vehicle: flatbed
+  profile: default
+  livery: grey
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 20
+    articulated_count: 1
+    lengths:
+    - 4
+  archive: generated_variants/1026_flatbed_default_grey_train.gnml
+  identifier: flatbed_default_grey_train
+  name_string: str_flatbed_default_grey_train_name
+  strings:
+    str_flatbed_default_grey_train_name: 2 axle flatbed - {SILVER}wagon{BLACK} - {GOLD}Grey
+    str_flatbed_default_grey_train_group_name: 2 axle flatbed - {SILVER}wagon{BLACK}
+      - {GOLD}Grey
+    str_flatbed_default_grey_train_nested_name: '{SILVER}wagon{BLACK} - {GOLD}Grey'
+    str_flatbed_default_grey_train_additional_text: Based on the chassis of generic
+      2 axle wagons
+- id: 1027
+  vehicle: molly
+  profile: default
+  livery: yellow
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths: []
+  archive: generated_variants/1027_molly_default_yellow_train.gnml
+  identifier: molly_default_yellow_train
+  name_string: str_molly_default_yellow_train_name
+  strings:
+    str_molly_default_yellow_train_name: Molly the Yellow Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Yellow
+    str_molly_default_yellow_train_group_name: Molly the Yellow Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Yellow
+    str_molly_default_yellow_train_nested_name: '{SILVER}Engine + Tender{BLACK} -
+      {GOLD}Yellow'
+    str_molly_default_yellow_train_additional_text: Based on GER D56 4-4-0
+- id: 1028
+  vehicle: longflatbed
+  profile: default
+  livery: grey
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 30
+    articulated_count: 1
+    lengths: []
+  archive: generated_variants/1028_longflatbed_default_grey_train.gnml
+  identifier: longflatbed_default_grey_train
+  name_string: str_longflatbed_default_grey_train_name
+  strings:
+    str_flatbed_default_grey_train_nested_name: '{SILVER}wagon{BLACK} - {GOLD}Grey'
+    str_longflatbed_default_grey_train_name: Long Flatbed - {SILVER}wagon{BLACK} -
+      {GOLD}Grey
+    str_longflatbed_default_grey_train_group_name: Long Flatbed - {SILVER}wagon{BLACK}
+      - {GOLD}Grey
+    str_longflatbed_default_grey_train_additional_text: Based on the chassis of a
+      Southern Railway CCT Van
+- id: 1029
+  vehicle: longflatbed
+  profile: default
+  livery: green
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 30
+    articulated_count: 1
+    lengths: []
+  archive: generated_variants/1029_longflatbed_default_green_train.gnml
+  identifier: longflatbed_default_green_train
+  name_string: str_longflatbed_default_green_train_name
+  strings:
+    str_longflatbed_default_green_train_name: Long Flatbed - {SILVER}wagon{BLACK}
+      - {GOLD}Green
+    str_longflatbed_default_green_train_group_name: Long Flatbed - {SILVER}wagon{BLACK}
+      - {GOLD}Green
+    str_longflatbed_default_green_train_nested_name: '{SILVER}wagon{BLACK} - {GOLD}Green'
+    str_longflatbed_default_green_train_additional_text: Based on the chassis of a
+      Southern Railway CCT Van
+- id: 1030
+  vehicle: hiro
+  profile: default
+  livery: black
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths: []
+  archive: generated_variants/1030_hiro_default_black_train.gnml
+  identifier: hiro_default_black_train
+  name_string: str_hiro_default_black_train_name
+  strings:
+    str_hiro_default_black_train_name: Hiro the Japanese Engine - {SILVER}Engine +
+      Tender{BLACK} - {GOLD}Black
+    str_hiro_default_black_train_group_name: Hiro the Japanese Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Black
+    str_hiro_default_black_train_nested_name: '{SILVER}Engine + Tender{BLACK} - {GOLD}Black'
+    str_hiro_default_black_train_additional_text: Based on JNR Class D51 2-8-2
+- id: 1031
+  vehicle: coaches
+  profile: default
+  livery: orange
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 70
+    articulated_count: 1
+    lengths:
+    - 8
+  archive: generated_variants/1031_coaches_default_orange_train.gnml
+  identifier: coaches_default_orange_train
+  name_string: str_coaches_default_orange_train_name
+  strings:
+    str_coaches_default_orange_train_name: Express Coach - {SILVER}coach{BLACK} -
+      {GOLD}Orange
+    str_coaches_default_orange_train_group_name: Express Coach - {SILVER}coach{BLACK}
+      - {GOLD}Orange
+    str_coaches_default_orange_train_nested_name: '{SILVER}coach{BLACK} - {GOLD}Orange'
+    str_coaches_default_orange_train_additional_text: Based on LMS suburban coaches
+      or SR maunsell Coaches
+- id: 1032
+  vehicle: coaches
+  profile: default
+  livery: red and white
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 70
+    articulated_count: 1
+    lengths:
+    - 8
+  archive: generated_variants/1032_coaches_default_red_and_white_train.gnml
+  identifier: coaches_default_red_and_white_train
+  name_string: str_coaches_default_red_and_white_train_name
+  strings:
+    str_coaches_default_red_and_white_train_name: Express Coach - {SILVER}coach{BLACK}
+      - {GOLD}Red and white
+    str_coaches_default_red_and_white_train_group_name: Express Coach - {SILVER}coach{BLACK}
+      - {GOLD}Red and white
+    str_coaches_default_red_and_white_train_nested_name: '{SILVER}coach{BLACK} - {GOLD}Red
+      and white'
+    str_coaches_default_red_and_white_train_additional_text: Based on LMS suburban
+      coaches or SR maunsell Coaches
+- id: 1033
+  vehicle: coaches
+  profile: default
+  livery: green and white
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 70
+    articulated_count: 1
+    lengths:
+    - 8
+  archive: generated_variants/1033_coaches_default_green_and_white_train.gnml
+  identifier: coaches_default_green_and_white_train
+  name_string: str_coaches_default_green_and_white_train_name
+  strings:
+    str_coaches_default_green_and_white_train_name: Express Coach - {SILVER}coach{BLACK}
+      - {GOLD}Green and white
+    str_coaches_default_green_and_white_train_group_name: Express Coach - {SILVER}coach{BLACK}
+      - {GOLD}Green and white
+    str_coaches_default_green_and_white_train_nested_name: '{SILVER}coach{BLACK} -
+      {GOLD}Green and white'
+    str_coaches_default_green_and_white_train_additional_text: Based on LMS suburban
+      coaches or SR maunsell Coaches
+- id: 1034
+  vehicle: coaches
+  profile: default
+  livery: green and cream
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 70
+    articulated_count: 1
+    lengths:
+    - 8
+  archive: generated_variants/1034_coaches_default_green_and_cream_train.gnml
+  identifier: coaches_default_green_and_cream_train
+  name_string: str_coaches_default_green_and_cream_train_name
+  strings:
+    str_coaches_default_green_and_cream_train_name: Express Coach - {SILVER}coach{BLACK}
+      - {GOLD}Green and Cream
+    str_coaches_default_green_and_cream_train_group_name: Express Coach - {SILVER}coach{BLACK}
+      - {GOLD}Green and Cream
+    str_coaches_default_green_and_cream_train_nested_name: '{SILVER}coach{BLACK} -
+      {GOLD}Green and Cream'
+    str_coaches_default_green_and_cream_train_additional_text: Based on LMS suburban
+      coaches or SR maunsell Coaches
+- id: 1035
+  vehicle: coaches
+  profile: default
+  livery: red and cream
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 70
+    articulated_count: 1
+    lengths:
+    - 8
+  archive: generated_variants/1035_coaches_default_red_and_cream_train.gnml
+  identifier: coaches_default_red_and_cream_train
+  name_string: str_coaches_default_red_and_cream_train_name
+  strings:
+    str_coaches_default_red_and_cream_train_name: Express Coach - {SILVER}coach{BLACK}
+      - {GOLD}Red and Cream
+    str_coaches_default_red_and_cream_train_group_name: Express Coach - {SILVER}coach{BLACK}
+      - {GOLD}Red and Cream
+    str_coaches_default_red_and_cream_train_nested_name: '{SILVER}coach{BLACK} - {GOLD}Red
+      and Cream'
+    str_coaches_default_red_and_cream_train_additional_text: Based on LMS suburban
+      coaches or SR maunsell Coaches
+- id: 1036
+  vehicle: dnd
+  profile: default
+  livery: red
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths:
+    - 5
+    - 3
+  archive: generated_variants/1036_dnd_default_red_train.gnml
+  identifier: dnd_default_red_train
+  name_string: str_dnd_default_red_train_name
+  strings:
+    str_james_default_red_train_nested_name: '{SILVER}Engine + Tender{BLACK} - {GOLD}Red'
+    str_dnd_default_red_train_name: Donald and Douglas the Scottish twins - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Red
+    str_dnd_default_red_train_group_name: Donald and Douglas the Scottish twins -
+      {SILVER}Engine + Tender{BLACK} - {GOLD}Red
+    str_dnd_default_red_train_additional_text: Based on Furness Railway D5 0-6-0
+- id: 1037
+  vehicle: annie_clarabel
+  profile: default
+  livery: orange
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 30
+    articulated_count: 2
+    lengths:
+    - 6
+    - 6
+  archive: generated_variants/1037_annie_clarabel_default_orange_train.gnml
+  identifier: annie_clarabel_default_orange_train
+  name_string: str_annie_clarabel_default_orange_train_name
+  strings:
+    str_coaches_default_orange_train_nested_name: '{SILVER}coach{BLACK} - {GOLD}Orange'
+    str_annie_clarabel_default_orange_train_name: Annie & Clarabel - {SILVER}coach{BLACK}
+      - {GOLD}Orange
+    str_annie_clarabel_default_orange_train_group_name: Annie & Clarabel - {SILVER}coach{BLACK}
+      - {GOLD}Orange
+    str_annie_clarabel_default_orange_train_additional_text: Based on LBSC Stroudley
+      Coaches
+- id: 1038
+  vehicle: rebecca
+  profile: default
+  livery: yellow
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths: []
+  archive: generated_variants/1038_rebecca_default_yellow_train.gnml
+  identifier: rebecca_default_yellow_train
+  name_string: str_rebecca_default_yellow_train_name
+  strings:
+    str_molly_default_yellow_train_nested_name: '{SILVER}Engine + Tender{BLACK} -
+      {GOLD}Yellow'
+    str_rebecca_default_yellow_train_name: Rebecca the air-smoothed Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Yellow
+    str_rebecca_default_yellow_train_group_name: Rebecca the air-smoothed Engine -
+      {SILVER}Engine + Tender{BLACK} - {GOLD}Yellow
+    str_rebecca_default_yellow_train_additional_text: Based on SR West Country and
+      Battle of Britain classes
+- id: 1039
+  vehicle: van
+  profile: default
+  livery: brown
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 20
+    articulated_count: 1
+    lengths:
+    - 4
+  archive: generated_variants/1039_van_default_brown_train.gnml
+  identifier: van_default_brown_train
+  name_string: str_van_default_brown_train_name
+  strings:
+    str_van_default_brown_train_name: 2 axle Box Van - {SILVER}wagon{BLACK} - {GOLD}Brown
+    str_van_default_brown_train_group_name: 2 axle Box Van - {SILVER}wagon{BLACK}
+      - {GOLD}Brown
+    str_van_default_brown_train_nested_name: '{SILVER}wagon{BLACK} - {GOLD}Brown'
+    str_van_default_brown_train_additional_text: Based on generic Box Vans
+- id: 1040
+  vehicle: henry
+  profile: oldp
+  livery: green
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths:
+    - 8
+    - 8
+  archive: generated_variants/1040_henry_oldp_green_train.gnml
+  identifier: henry_oldp_green_train
+  name_string: str_henry_oldp_green_train_name
+  strings:
+    str_henry_oldp_green_train_name: Henry the Green Engine - {SILVER}Engine + Tender{BLACK}
+      - {GOLD}Green
+    str_henry_oldp_green_train_group_name: Henry the Green Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Green
+    str_henry_oldp_green_train_nested_name: '{SILVER}Engine + Tender{BLACK} - {GOLD}Green'
+    str_henry_oldp_green_train_additional_text: Based on rejected GNR A1 pacific plans{}later
+      rebuilt as LMS Stanier Class 5 "Black Five" 4-6-0
+- id: 1041
+  vehicle: henry
+  profile: old
+  livery: green
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths:
+    - 8
+    - 8
+  archive: generated_variants/1041_henry_old_green_train.gnml
+  identifier: henry_old_green_train
+  name_string: str_henry_old_green_train_name
+  strings:
+    str_henry_oldp_green_train_group_name: Henry the Green Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Green
+    str_henry_oldp_green_train_nested_name: '{SILVER}Engine + Tender{BLACK} - {GOLD}Green'
+    str_henry_old_green_train_name: Henry the Green Engine - {SILVER}Engine + Tender{BLACK}
+      - {GOLD}Green
+    str_henry_old_green_train_additional_text: Based on rejected GNR A1 pacific plans{}later
+      rebuilt as LMS Stanier Class 5 "Black Five" 4-6-0
+- id: 1042
+  vehicle: bruno
+  profile: default
+  livery: red
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 4
+  archive: generated_variants/1042_bruno_default_red_train.gnml
+  identifier: bruno_default_red_train
+  name_string: str_bruno_default_red_train_name
+  strings:
+    str_bruno_default_red_train_name: Bruno the Sodor Lines Caboose - {SILVER}wagon{BLACK}
+      - {GOLD}Red
+    str_bruno_default_red_train_group_name: Bruno the Sodor Lines Caboose - {SILVER}wagon{BLACK}
+      - {GOLD}Red
+    str_bruno_default_red_train_nested_name: '{SILVER}wagon{BLACK} - {GOLD}Red'
+    str_bruno_default_red_train_additional_text: Based on a shortened centralia caboose
+- id: 1043
+  vehicle: salty
+  profile: default
+  livery: red
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths: []
+  archive: generated_variants/1043_salty_default_red_train.gnml
+  identifier: salty_default_red_train
+  name_string: str_salty_default_red_train_name
+  strings:
+    str_salty_default_red_train_name: Salty the Dockyard Diesel - {SILVER}Locomotive{BLACK}
+      - {GOLD}Red
+    str_salty_default_red_train_group_name: Salty the Dockyard Diesel - {SILVER}Locomotive{BLACK}
+      - {GOLD}Red
+    str_salty_default_red_train_nested_name: '{SILVER}Locomotive{BLACK} - {GOLD}Red'
+    str_salty_default_red_train_additional_text: Based on BR Class 07{}Down by the
+      dockside
+- id: 1044
+  vehicle: truck
+  profile: default
+  livery: grey
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 20
+    articulated_count: 1
+    lengths:
+    - 4
+  archive: generated_variants/1044_truck_default_grey_train.gnml
+  identifier: truck_default_grey_train
+  name_string: str_truck_default_grey_train_name
+  strings:
+    str_flatbed_default_grey_train_nested_name: '{SILVER}wagon{BLACK} - {GOLD}Grey'
+    str_truck_default_grey_train_name: 2 axle Plank Truck - {SILVER}wagon{BLACK} -
+      {GOLD}Grey
+    str_truck_default_grey_train_group_name: 2 axle Plank Truck - {SILVER}wagon{BLACK}
+      - {GOLD}Grey
+    str_truck_default_grey_train_additional_text: Based on generic plank trucks
+- id: 1045
+  vehicle: lnbrvan
+  profile: default
+  livery: brown
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 20
+    articulated_count: 1
+    lengths:
+    - 4
+  archive: generated_variants/1045_lnbrvan_default_brown_train.gnml
+  identifier: lnbrvan_default_brown_train
+  name_string: str_lnbrvan_default_brown_train_name
+  strings:
+    str_van_default_brown_train_nested_name: '{SILVER}wagon{BLACK} - {GOLD}Brown'
+    str_lnbrvan_default_brown_train_name: L&BR Van - {SILVER}wagon{BLACK} - {GOLD}Brown
+    str_lnbrvan_default_brown_train_group_name: L&BR Van - {SILVER}wagon{BLACK} -
+      {GOLD}Brown
+    str_lnbrvan_default_brown_train_additional_text: Based on the narrow gauge Lynton
+      and Barnstaple Railway Vans
+- id: 1046
+  vehicle: arthur
+  profile: default
+  livery: lms red
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 7
+  archive: generated_variants/1046_arthur_default_lms_red_train.gnml
+  identifier: arthur_default_lms_red_train
+  name_string: str_arthur_default_lms_red_train_name
+  strings:
+    str_arthur_default_lms_red_train_name: Arthur the Big Tank Engine - {SILVER}Tank
+      Engine{BLACK} - {GOLD}LMS Red
+    str_arthur_default_lms_red_train_group_name: Arthur the Big Tank Engine - {SILVER}Tank
+      Engine{BLACK} - {GOLD}LMS Red
+    str_arthur_default_lms_red_train_nested_name: '{SILVER}Tank Engine{BLACK} - {GOLD}LMS
+      Red'
+    str_arthur_default_lms_red_train_additional_text: Based on Ivatt 2MT tank 2-6-2T{}his
+      spotless Record
+- id: 1047
+  vehicle: nia
+  profile: default
+  livery: orange
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 7
+  archive: generated_variants/1047_nia_default_orange_train.gnml
+  identifier: nia_default_orange_train
+  name_string: str_nia_default_orange_train_name
+  strings:
+    str_nia_default_orange_train_name: Nia the Kenyan Engine - {SILVER}Tank Engine{BLACK}
+      - {GOLD}Orange
+    str_nia_default_orange_train_group_name: Nia the Kenyan Engine - {SILVER}Tank
+      Engine{BLACK} - {GOLD}Orange
+    str_nia_default_orange_train_nested_name: '{SILVER}Tank Engine{BLACK} - {GOLD}Orange'
+    str_nia_default_orange_train_additional_text: Based on KUR ED1 class
+- id: 1048
+  vehicle: branchlinecoach
+  profile: default
+  livery: orange
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 30
+    articulated_count: 1
+    lengths:
+    - 6
+  archive: generated_variants/1048_branchlinecoach_default_orange_train.gnml
+  identifier: branchlinecoach_default_orange_train
+  name_string: str_branchlinecoach_default_orange_train_name
+  strings:
+    str_coaches_default_orange_train_nested_name: '{SILVER}coach{BLACK} - {GOLD}Orange'
+    str_branchlinecoach_default_orange_train_name: 2 axle Branchline Coach - {SILVER}coach{BLACK}
+      - {GOLD}Orange
+    str_branchlinecoach_default_orange_train_group_name: 2 axle Branchline Coach -
+      {SILVER}coach{BLACK} - {GOLD}Orange
+    str_branchlinecoach_default_orange_train_additional_text: Based on LBSC Stroudley
+      Coaches/GNR Metropolitan Coaches
+- id: 1049
+  vehicle: branchlinecoach
+  profile: default
+  livery: red
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 30
+    articulated_count: 1
+    lengths:
+    - 6
+  archive: generated_variants/1049_branchlinecoach_default_red_train.gnml
+  identifier: branchlinecoach_default_red_train
+  name_string: str_branchlinecoach_default_red_train_name
+  strings:
+    str_branchlinecoach_default_red_train_name: 2 axle Branchline Coach - {SILVER}coach{BLACK}
+      - {GOLD}Red
+    str_branchlinecoach_default_red_train_group_name: 2 axle Branchline Coach - {SILVER}coach{BLACK}
+      - {GOLD}Red
+    str_branchlinecoach_default_red_train_nested_name: '{SILVER}coach{BLACK} - {GOLD}Red'
+    str_branchlinecoach_default_red_train_additional_text: Based on LBSC Stroudley
+      Coaches/GNR Metropolitan Coaches
+- id: 1050
+  vehicle: branchlinecoach
+  profile: default
+  livery: green and cream
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 30
+    articulated_count: 1
+    lengths:
+    - 6
+  archive: generated_variants/1050_branchlinecoach_default_green_and_cream_train.gnml
+  identifier: branchlinecoach_default_green_and_cream_train
+  name_string: str_branchlinecoach_default_green_and_cream_train_name
+  strings:
+    str_branchlinecoach_default_green_and_cream_train_name: 2 axle Branchline Coach
+      - {SILVER}coach{BLACK} - {GOLD}Green and cream
+    str_branchlinecoach_default_green_and_cream_train_group_name: 2 axle Branchline
+      Coach - {SILVER}coach{BLACK} - {GOLD}Green and cream
+    str_branchlinecoach_default_green_and_cream_train_nested_name: '{SILVER}coach{BLACK}
+      - {GOLD}Green and cream'
+    str_branchlinecoach_default_green_and_cream_train_additional_text: Based on LBSC
+      Stroudley Coaches/GNR Metropolitan Coaches
+- id: 1051
+  vehicle: boco
+  profile: default
+  livery: green
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 7
+  archive: generated_variants/1051_boco_default_green_train.gnml
+  identifier: boco_default_green_train
+  name_string: str_boco_default_green_train_name
+  strings:
+    str_derek_default_green_train_nested_name: '{SILVER}Locomotive{BLACK} - {GOLD}Green'
+    str_boco_default_green_train_name: BoCo the Big Diesel - {SILVER}Locomotive{BLACK}
+      - {GOLD}Green
+    str_boco_default_green_train_group_name: BoCo the Big Diesel - {SILVER}Locomotive{BLACK}
+      - {GOLD}Green
+    str_boco_default_green_train_additional_text: Based on Metropolitan Vickers Type
+      2{}Coughs and Sneazles Spread Diseasels
+- id: 1052
+  vehicle: boco
+  profile: default
+  livery: green (rws)
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 7
+  archive: generated_variants/1052_boco_default_green__rws__train.gnml
+  identifier: boco_default_green__rws__train
+  name_string: str_boco_default_green__rws__train_name
+  strings:
+    str_boco_default_green__rws__train_name: BoCo the Big Diesel - {SILVER}Locomotive{BLACK}
+      - {GOLD}Green RWS
+    str_boco_default_green__rws__train_group_name: BoCo the Big Diesel - {SILVER}Locomotive{BLACK}
+      - {GOLD}Green RWS
+    str_boco_default_green__rws__train_nested_name: '{SILVER}Locomotive{BLACK} - {GOLD}Green
+      RWS'
+    str_boco_default_green__rws__train_additional_text: Based on Metropolitan Vickers
+      Type 2{}Coughs and Sneazles Spread Diseasels
+- id: 1053
+  vehicle: spencer
+  profile: default
+  livery: silver
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths: []
+  archive: generated_variants/1053_spencer_default_silver_train.gnml
+  identifier: spencer_default_silver_train
+  name_string: str_spencer_default_silver_train_name
+  strings:
+    str_spencer_default_silver_train_name: Spencer the Silver Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Silver
+    str_spencer_default_silver_train_group_name: Spencer the Silver Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Silver
+    str_spencer_default_silver_train_nested_name: '{SILVER}Engine + Tender{BLACK}
+      - {GOLD}Silver'
+    str_spencer_default_silver_train_additional_text: Based on LNER Class A4 4-6-2
+- id: 1054
+  vehicle: tanker
+  profile: default
+  livery: white
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 20
+    articulated_count: 1
+    lengths:
+    - 4
+  archive: generated_variants/1054_tanker_default_white_train.gnml
+  identifier: tanker_default_white_train
+  name_string: str_tanker_default_white_train_name
+  strings:
+    str_tanker_default_white_train_name: 2 axle Plain tanker - {SILVER}wagon{BLACK}
+      - {GOLD}white
+    str_tanker_default_white_train_group_name: 2 axle Plain tanker - {SILVER}wagon{BLACK}
+      - {GOLD}white
+    str_tanker_default_white_train_nested_name: '{SILVER}wagon{BLACK} - {GOLD}white'
+    str_tanker_default_white_train_additional_text: Based on generic Pre-War tankers
+- id: 1055
+  vehicle: tanker
+  profile: default
+  livery: black
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 20
+    articulated_count: 1
+    lengths:
+    - 4
+  archive: generated_variants/1055_tanker_default_black_train.gnml
+  identifier: tanker_default_black_train
+  name_string: str_tanker_default_black_train_name
+  strings:
+    str_tanker_default_black_train_name: 2 axle Plain tanker - {SILVER}wagon{BLACK}
+      - {GOLD}black
+    str_tanker_default_black_train_group_name: 2 axle Plain tanker - {SILVER}wagon{BLACK}
+      - {GOLD}black
+    str_tanker_default_black_train_nested_name: '{SILVER}wagon{BLACK} - {GOLD}black'
+    str_tanker_default_black_train_additional_text: Based on generic Pre-War tankers
+- id: 1056
+  vehicle: bogietruck
+  profile: default
+  livery: red
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 40
+    articulated_count: 1
+    lengths:
+    - 6
+  archive: generated_variants/1056_bogietruck_default_red_train.gnml
+  identifier: bogietruck_default_red_train
+  name_string: str_bogietruck_default_red_train_name
+  strings:
+    str_bruno_default_red_train_nested_name: '{SILVER}wagon{BLACK} - {GOLD}Red'
+    str_bogietruck_default_red_train_name: L&BR bogie truck - {SILVER}wagon{BLACK}
+      - {GOLD}Red
+    str_bogietruck_default_red_train_group_name: L&BR bogie truck - {SILVER}wagon{BLACK}
+      - {GOLD}Red
+    str_bogietruck_default_red_train_additional_text: Based on L&BR bogie Trucks
+- id: 1057
+  vehicle: isabel
+  profile: default
+  livery: cream and brown
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 30
+    articulated_count: 1
+    lengths:
+    - 6
+  archive: generated_variants/1057_isabel_default_cream_and_brown_train.gnml
+  identifier: isabel_default_cream_and_brown_train
+  name_string: str_isabel_default_cream_and_brown_train_name
+  strings:
+    str_isabel_default_cream_and_brown_train_name: Isabel the Autocoach - {SILVER}coach{BLACK}
+      - {GOLD}Cream and Brown
+    str_isabel_default_cream_and_brown_train_group_name: Isabel the Autocoach - {SILVER}coach{BLACK}
+      - {GOLD}Cream and Brown
+    str_isabel_default_cream_and_brown_train_nested_name: '{SILVER}coach{BLACK} -
+      {GOLD}Cream and Brown'
+    str_isabel_default_cream_and_brown_train_additional_text: Based on GWR autocoach
+- id: 1058
+  vehicle: brakevan
+  profile: default
+  livery: black
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths: []
+  archive: generated_variants/1058_brakevan_default_black_train.gnml
+  identifier: brakevan_default_black_train
+  name_string: str_brakevan_default_black_train_name
+  strings:
+    str_brakevan_default_black_train_name: Brakevan - {SILVER}wagon{BLACK} - {GOLD}Black
+    str_brakevan_default_black_train_group_name: Brakevan - {SILVER}wagon{BLACK} -
+      {GOLD}Black
+    str_brakevan_default_black_train_nested_name: '{SILVER}wagon{BLACK} - {GOLD}Black'
+    str_brakevan_default_black_train_additional_text: Based on SR 25 ton vans
+- id: 1059
+  vehicle: emily
+  profile: default
+  livery: green
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths: []
+  archive: generated_variants/1059_emily_default_green_train.gnml
+  identifier: emily_default_green_train
+  name_string: str_emily_default_green_train_name
+  strings:
+    str_henry_oldp_green_train_nested_name: '{SILVER}Engine + Tender{BLACK} - {GOLD}Green'
+    str_emily_default_green_train_name: Emily the Emerald Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Green
+    str_emily_default_green_train_group_name: Emily the Emerald Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Green
+    str_emily_default_green_train_additional_text: Based on GNR Sterling Single
+- id: 1060
+  vehicle: oliver
+  profile: default
+  livery: green
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 5
+  archive: generated_variants/1060_oliver_default_green_train.gnml
+  identifier: oliver_default_green_train
+  name_string: str_oliver_default_green_train_name
+  strings:
+    str_percy_default_green_train_nested_name: '{SILVER}Tank Engine{BLACK} - {GOLD}Green'
+    str_oliver_default_green_train_name: Oliver the Great Western Engine - {SILVER}Tank
+      Engine{BLACK} - {GOLD}Green
+    str_oliver_default_green_train_group_name: Oliver the Great Western Engine - {SILVER}Tank
+      Engine{BLACK} - {GOLD}Green
+    str_oliver_default_green_train_additional_text: Based on GWR 14xx 0-4-2T{}are
+      you a fat controller's engine?
