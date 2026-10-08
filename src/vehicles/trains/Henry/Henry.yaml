@@ -19,7 +19,6 @@ profiles:
   -identifier: oldP
     name: "old shape, pacific"
     power: 1000
-  profiles:
   -identifier: old
     name: "old shape"
     power: 1000
