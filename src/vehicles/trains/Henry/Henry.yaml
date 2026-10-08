@@ -16,16 +16,16 @@ cargo: none
 dates:
   introduction_date: 1
 profiles:
-  -identifier: oldP
+  - identifier: oldP
     name: "old shape, pacific"
     power: 1000
-  -identifier: old
+  - identifier: old
     name: "old shape"
     power: 1000
-  -identifier: New
+  - identifier: New
     name: "New shape"
     power: 1500
-  -identifier: NewS
+  - identifier: NewS
     name: "third shape"
     power: 1500
 
