@@ -18,11 +18,10 @@ defaults:
 # The purchase list is ordered by hand rather than by a derived rule: the NWR characters
 # come first in their number order, then the engines with no number by power, then the
 # coaches and wagons. The block names the generated item symbols, so BRBuild runs
-# tools/generate_sortpurchase.py before reading the file, handing it the items this build
-# produced; the script rewrites the file so a new or renamed candidate cannot leave it stale.
+# tools/generate_sortpurchase.py, which builds the list from the items this build produced;
+# BRBuild compiles what it returns and stores it in WorkingData, so no list is kept here.
 purchase_list:
   script: tools/generate_sortpurchase.py
-  file: custom_nml/append/sortpurchase.pnml
 
 params:
   - identifier: param_speed_mode

@@ -1,10 +1,9 @@
-"""Regenerate OpenTTE2's hand-ordered purchase list from the items a build produced.
+"""Build OpenTTE2's hand-ordered purchase list from the items a build produced.
 
-The project orders its purchase list by hand (`purchase_list.file` in `src/grf/GRF.yaml`),
+The project orders its purchase list by hand (`purchase_list.script` in `src/grf/GRF.yaml`),
 because no derived rule expresses "the NWR characters first, in their number order, then the
-unnumbered engines by power, then coaches, then wagons". BRBuild runs this script
-(`purchase_list.script`) before it reads that file and hands it this build's items as JSON,
-so the list cannot name a symbol the build no longer produces:
+unnumbered engines by power, then coaches, then wagons". BRBuild runs this script and hands it
+this build's items as JSON, so the list cannot name a symbol the build no longer produces:
 
 1. engines carrying an `NWR/<number>` tag, by number — numeric numbers ascending, then the
    `D`-numbered diesels — taking the first number where a tag lists two (Donald and Douglas
@@ -17,8 +16,9 @@ Road vehicles are ordered by the same rules; every road vehicle in the set falls
 two groups. A unit's own variants keep the order the build emitted them in, so a unit's
 liveries follow its YAML and never interleave with another unit's.
 
-Run it by hand against the last build's items with `--dry-run` to see the result without
-writing anything; `--items` defaults to the file BRBuild writes.
+The list is printed, not written: BRBuild stores it in the build's own working data and
+compiles it, so nothing about it is persisted in the project. Run it by hand against the last
+build's items to see it (`--items` defaults to the file BRBuild writes).
 """
 
 from __future__ import annotations
@@ -32,7 +32,6 @@ from pathlib import Path
 import yaml
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-TARGET = PROJECT_ROOT / "src" / "grf" / "custom_nml" / "append" / "sortpurchase.pnml"
 DEFAULT_ITEMS = PROJECT_ROOT / "WorkingData" / "OpenTTE2" / "purchase_list_items.json"
 VEHICLES = PROJECT_ROOT / "src" / "vehicles"
 
@@ -41,19 +40,20 @@ NWR_TAG = re.compile(r"(?i)^\s*NWR\s*/\s*D?(\d+)")
 NWR_DIESEL_TAG = re.compile(r"(?i)^\s*NWR\s*/\s*D\s*(\d+)\s*$")
 
 HEADER = """\
-// Purchase-list order for OpenTTE2, maintained by hand (purchase_list.file).
+// Purchase-list order for OpenTTE2.
 //
 // 1. NWR-numbered engines, by number (numeric numbers, then the `D` diesel numbers).
 // 2. The engines without an NWR number, by power (lowest first).
 // 3. Coaches, by name.
 // 4. Wagons, by name.
 //
-// The block names the item symbols the build produced, so a new or renamed candidate has to
-// be added here by hand. A unit typed `types: [TRAM, TRAIN]` appears in both blocks: the tram
-// side is ordered by the same rule.
+// A unit typed `types: [TRAM, TRAIN]` appears in both blocks: the tram side is ordered by the
+// same rule.
 //
-// Rebuilt from the build's own items by tools/generate_sortpurchase.py, which BRBuild runs
-// before it reads this file (purchase_list.script in src/grf/GRF.yaml).
+// Built from the build's own items by tools/generate_sortpurchase.py, which BRBuild runs
+// (purchase_list.script in src/grf/GRF.yaml). The list is not kept in the project: BRBuild
+// stores it in the build's working data and compiles it, so a renamed or new candidate
+// cannot leave a stale symbol behind.
 """
 
 SECTIONS = {
@@ -248,21 +248,10 @@ def main() -> int:
         default=DEFAULT_ITEMS,
         help="the build's items, as BRBuild writes them (default: %(default)s)",
     )
-    parser.add_argument("--dry-run", action="store_true", help="print the file instead of writing it")
     args = parser.parse_args()
 
-    content = build_file(built_items(args.items))
+    sys.stdout.write(build_file(built_items(args.items)))
 
-    if args.dry_run:
-        sys.stdout.write(content)
-        return 0
-
-    if TARGET.read_text(encoding="utf-8") == content:
-        print(f"Purchase list already in step with the build: {TARGET}")
-        return 0
-
-    TARGET.write_text(content, encoding="utf-8")
-    print(f"Rebuilt the purchase list: {TARGET} ({len(content.splitlines())} lines)")
     return 0
 
 
