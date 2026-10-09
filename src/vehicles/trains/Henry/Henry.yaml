@@ -6,7 +6,7 @@ stats:
   vehicle_type: TRAIN
   train_type: LOCOMOTIVE
   power_type: STEAM
-  power: 1500 # 1000 for old shape
+  power: 1500 # 1000 for the old shape
   tractive_effort: 113.2
   weight: 84
   speed: 80
@@ -15,25 +15,21 @@ stats:
 cargo: none
 dates:
   introduction_date: 1
-profiles:
-  - identifier: oldP
-    name: "old shape, pacific"
-    power: 1000
-  - identifier: old
-    name: "old shape"
-    power: 1000
-    sprite_group: oldP
-  - identifier: New
-    name: "New shape"
-    power: 1500
-    sprite_group: oldP
-  - identifier: NewS
-    name: "third shape"
-    power: 1500
-    sprite_group: oldP
 
+# The sheet draws one locomotive and its tender, and every shape is that same drawing, so the
+# shapes are liveries of one formation: the three later ones reuse the first's rows (a livery's
+# `sprite_group` names the livery it copies). The two old-shape liveries carry the lower power
+# the rebuild replaced.
 liveries:
-  - name: Green
+  - name: Old Shape, Pacific, Green
+    power: 1000
+  - name: Old Shape, Green
+    power: 1000
+    sprite_group: Old Shape, Pacific, Green
+  - name: New shape, Green
+    sprite_group: Old Shape, Pacific, Green
+  - name: Third shape, Green
+    sprite_group: Old Shape, Pacific, Green
 
 additional_text:
   - Based on rejected GNR A1 pacific plans

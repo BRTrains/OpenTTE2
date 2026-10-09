@@ -1024,14 +1024,14 @@ variants:
     str_van_default_brown_train_group_name: 2 axle Box Van - {SILVER}wagon{BLACK}
       - {GOLD}Brown
     str_van_default_brown_train_additional_text: Based on generic Box Vans
-- id: 1040
+- id: null
   vehicle: henry
   profile: oldp
   livery: green
   vehicle_type: train
   generation: 1
   locked: false
-  active: true
+  active: false
   deprecated: false
   compatibility:
     capacity: 0
@@ -1508,11 +1508,11 @@ variants:
   identifier: emily_default_green_train
   name_string: str_emily_default_green_train_name
   strings:
-    str_henry_oldp_green_train_nested_name: '{SILVER}Engine + Tender{BLACK} - {GOLD}Green'
     str_emily_default_green_train_name: Emily the Emerald Engine - {SILVER}Engine
       + Tender{BLACK} - {GOLD}Green
     str_emily_default_green_train_group_name: Emily the Emerald Engine - {SILVER}Engine
       + Tender{BLACK} - {GOLD}Green
+    str_emily_default_green_train_nested_name: '{SILVER}Engine + Tender{BLACK} - {GOLD}Green'
     str_emily_default_green_train_additional_text: Based on GNR Sterling Single
 - id: 1060
   vehicle: oliver
@@ -1639,14 +1639,14 @@ variants:
       - {GOLD}Green and Cream Brake'
     str_branchlinecoach_default_green_and_cream_brake_train_additional_text: Based
       on LBSC Stroudley Coaches/GNR Metropolitan Coaches
-- id: 1064
+- id: null
   vehicle: henry
   profile: old
   livery: green
   vehicle_type: train
   generation: 2
   locked: false
-  active: true
+  active: false
   deprecated: false
   compatibility:
     capacity: 0
@@ -1665,14 +1665,14 @@ variants:
       - {GOLD}Green
     str_henry_old_green_train_v2_additional_text: Based on rejected GNR A1 pacific
       plans{}later rebuilt as LMS Stanier Class 5 "Black Five" 4-6-0
-- id: 1065
+- id: null
   vehicle: henry
   profile: new
   livery: green
   vehicle_type: train
   generation: 1
   locked: false
-  active: true
+  active: false
   deprecated: false
   compatibility:
     capacity: 0
@@ -1691,14 +1691,14 @@ variants:
       - {GOLD}Green
     str_henry_new_green_train_additional_text: Based on rejected GNR A1 pacific plans{}later
       rebuilt as LMS Stanier Class 5 "Black Five" 4-6-0
-- id: 1066
+- id: null
   vehicle: henry
   profile: news
   livery: green
   vehicle_type: train
   generation: 1
   locked: false
-  active: true
+  active: false
   deprecated: false
   compatibility:
     capacity: 0
@@ -1717,3 +1717,111 @@ variants:
       - {GOLD}Green
     str_henry_news_green_train_additional_text: Based on rejected GNR A1 pacific plans{}later
       rebuilt as LMS Stanier Class 5 "Black Five" 4-6-0
+- id: 1040
+  vehicle: henry
+  profile: default
+  livery: old shape, pacific, green
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths:
+    - 8
+    - 4
+  archive: generated_variants/1040_henry_default_old_shape__pacific__green_train.gnml
+  identifier: henry_default_old_shape__pacific__green_train
+  name_string: str_henry_default_old_shape__pacific__green_train_name
+  strings:
+    str_henry_default_old_shape__pacific__green_train_name: Henry the Green Engine
+      - {SILVER}Engine + Tender{BLACK} - {GOLD}Old Shape Pacific Green
+    str_henry_default_old_shape__pacific__green_train_group_name: Henry the Green
+      Engine - {SILVER}Engine + Tender{BLACK} - {GOLD}Old Shape Pacific Green
+    str_henry_default_old_shape__pacific__green_train_nested_name: '{SILVER}Engine
+      + Tender{BLACK} - {GOLD}Old Shape Pacific Green'
+    str_henry_default_old_shape__pacific__green_train_additional_text: Based on rejected
+      GNR A1 pacific plans{}later rebuilt as LMS Stanier Class 5 "Black Five" 4-6-0
+- id: 1064
+  vehicle: henry
+  profile: default
+  livery: old shape, green
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths:
+    - 8
+    - 4
+  archive: generated_variants/1064_henry_default_old_shape__green_train.gnml
+  identifier: henry_default_old_shape__green_train
+  name_string: str_henry_default_old_shape__green_train_name
+  strings:
+    str_henry_default_old_shape__green_train_name: Henry the Green Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Old Shape Green
+    str_henry_default_old_shape__green_train_group_name: Henry the Green Engine -
+      {SILVER}Engine + Tender{BLACK} - {GOLD}Old Shape Green
+    str_henry_default_old_shape__green_train_nested_name: '{SILVER}Engine + Tender{BLACK}
+      - {GOLD}Old Shape Green'
+    str_henry_default_old_shape__green_train_additional_text: Based on rejected GNR
+      A1 pacific plans{}later rebuilt as LMS Stanier Class 5 "Black Five" 4-6-0
+- id: 1065
+  vehicle: henry
+  profile: default
+  livery: new shape, green
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths:
+    - 8
+    - 4
+  archive: generated_variants/1065_henry_default_new_shape__green_train.gnml
+  identifier: henry_default_new_shape__green_train
+  name_string: str_henry_default_new_shape__green_train_name
+  strings:
+    str_henry_default_new_shape__green_train_name: Henry the Green Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}New shape Green
+    str_henry_default_new_shape__green_train_group_name: Henry the Green Engine -
+      {SILVER}Engine + Tender{BLACK} - {GOLD}New shape Green
+    str_henry_default_new_shape__green_train_nested_name: '{SILVER}Engine + Tender{BLACK}
+      - {GOLD}New shape Green'
+    str_henry_default_new_shape__green_train_additional_text: Based on rejected GNR
+      A1 pacific plans{}later rebuilt as LMS Stanier Class 5 "Black Five" 4-6-0
+- id: 1066
+  vehicle: henry
+  profile: default
+  livery: third shape, green
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 2
+    lengths:
+    - 8
+    - 4
+  archive: generated_variants/1066_henry_default_third_shape__green_train.gnml
+  identifier: henry_default_third_shape__green_train
+  name_string: str_henry_default_third_shape__green_train_name
+  strings:
+    str_henry_default_third_shape__green_train_name: Henry the Green Engine - {SILVER}Engine
+      + Tender{BLACK} - {GOLD}Third shape Green
+    str_henry_default_third_shape__green_train_group_name: Henry the Green Engine
+      - {SILVER}Engine + Tender{BLACK} - {GOLD}Third shape Green
+    str_henry_default_third_shape__green_train_nested_name: '{SILVER}Engine + Tender{BLACK}
+      - {GOLD}Third shape Green'
+    str_henry_default_third_shape__green_train_additional_text: Based on rejected
+      GNR A1 pacific plans{}later rebuilt as LMS Stanier Class 5 "Black Five" 4-6-0
