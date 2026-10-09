@@ -78,19 +78,19 @@ sort(FEAT_TRAINS, [
   // -- coaches, by name --
   // 2 axle Branchline Coach
   branchlinecoach_default_orange_train,
-  branchlinecoach_default_red_train,
-  branchlinecoach_default_green_and_cream_train,
   branchlinecoach_default_orange_brake_train,
-  branchlinecoach_default_red_brake_train,
+  branchlinecoach_default_green_and_cream_train,
   branchlinecoach_default_green_and_cream_brake_train,
+  branchlinecoach_default_red_train,
+  branchlinecoach_default_red_brake_train,
   // Annie & Clarabel
   annie_clarabel_default_orange_train,
   // Express Coach
-  coaches_default_orange_train,
   coaches_default_red_and_white_train,
   coaches_default_green_and_white_train,
-  coaches_default_green_and_cream_train,
+  coaches_default_orange_train,
   coaches_default_red_and_cream_train,
+  coaches_default_green_and_cream_train,
   // Henrietta
   henrietta_default_wood_train,
   // Isabel the Autocoach

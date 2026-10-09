@@ -112,15 +112,15 @@ def vehicle_metadata() -> dict[str, dict]:
     return found
 
 
-def built_items() -> dict[str, dict[str, int]]:
-    """The features and item symbols the last build produced, with their ids."""
+def built_items() -> dict[str, list[tuple[str, int]]]:
+    """The features and item symbols the last build produced, in the order it emitted them."""
     if not NML.is_file():
         raise SystemExit(f"No build output to read: {NML}")
 
-    items: dict[str, dict[str, int]] = {}
+    items: dict[str, list[tuple[str, int]]] = {}
 
     for feature, symbol, item_id in ITEM.findall(NML.read_text(encoding="utf-8")):
-        items.setdefault(feature, {})[symbol] = int(item_id)
+        items.setdefault(feature, []).append((symbol, int(item_id)))
 
     return items
 
@@ -199,14 +199,15 @@ def build_file() -> str:
     lines = [HEADER]
 
     for feature in FEATURES:
-        built = items.get(feature, {})
+        built = items.get(feature, [])
 
         if not built:
             continue
 
         units: dict[str, list[str]] = {}
 
-        for symbol in sorted(built, key=lambda symbol: built[symbol]):
+        # The build's own order, so a unit's liveries keep the order its YAML declares.
+        for symbol, _item_id in built:
             vehicle = owners.get(symbol)
 
             if vehicle is None:
