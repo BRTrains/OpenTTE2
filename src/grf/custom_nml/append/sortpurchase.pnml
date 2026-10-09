@@ -9,8 +9,8 @@
 // be added here by hand. A unit typed `types: [TRAM, TRAIN]` appears in both blocks: the tram
 // side is ordered by the same rule.
 //
-// Rebuilt from the build's own items by tools/generate_sortpurchase.py, which build.py runs
-// after every successful build.
+// Rebuilt from the build's own items by tools/generate_sortpurchase.py, which BRBuild runs
+// before it reads this file (purchase_list.script in src/grf/GRF.yaml).
 sort(FEAT_TRAINS, [
   // -- engines with an NWR number, by number --
   // Thomas the Tank Engine (NWR 1, 350 hp)

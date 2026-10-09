@@ -1,9 +1,10 @@
-"""Regenerate OpenTTE2's hand-ordered purchase list from the build's own items.
+"""Regenerate OpenTTE2's hand-ordered purchase list from the items a build produced.
 
 The project orders its purchase list by hand (`purchase_list.file` in `src/grf/GRF.yaml`),
 because no derived rule expresses "the NWR characters first, in their number order, then the
-unnumbered engines by power, then coaches, then wagons". This tool rebuilds that file from
-the vehicles the build actually produced, so a new unit cannot leave the list stale:
+unnumbered engines by power, then coaches, then wagons". BRBuild runs this script
+(`purchase_list.script`) before it reads that file and hands it this build's items as JSON,
+so the list cannot name a symbol the build no longer produces:
 
 1. engines carrying an `NWR/<number>` tag, by number — numeric numbers ascending, then the
    `D`-numbered diesels — taking the first number where a tag lists two (Donald and Douglas
@@ -12,17 +13,18 @@ the vehicles the build actually produced, so a new unit cannot leave the list st
 3. coaches, by name;
 4. wagons, by name.
 
-Road vehicles are ordered by the same rules; every road vehicle in the set falls in the
-first two groups. A unit's own variants stay together in the build's order (profile-outer,
-livery-inner), so a unit's liveries never interleave with another unit's.
+Road vehicles are ordered by the same rules; every road vehicle in the set falls in the first
+two groups. A unit's own variants keep the order the build emitted them in, so a unit's
+liveries follow its YAML and never interleave with another unit's.
 
-`build.py` runs this after every successful build, so the file in the repository is always
-the build's own item set. Run it by hand with `--dry-run` to see the result without writing.
+Run it by hand against the last build's items with `--dry-run` to see the result without
+writing anything; `--items` defaults to the file BRBuild writes.
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
@@ -31,18 +33,12 @@ import yaml
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 TARGET = PROJECT_ROOT / "src" / "grf" / "custom_nml" / "append" / "sortpurchase.pnml"
-NML = PROJECT_ROOT / "Build" / "OpenTTE2.nml"
-REGISTRY = PROJECT_ROOT / "src" / "grf" / "VehicleIDData.yaml"
+DEFAULT_ITEMS = PROJECT_ROOT / "WorkingData" / "OpenTTE2" / "purchase_list_items.json"
 VEHICLES = PROJECT_ROOT / "src" / "vehicles"
 
 #: `NWR/1`, `NWR/9,10`, `NWR/D2` — the number is what orders the first group.
 NWR_TAG = re.compile(r"(?i)^\s*NWR\s*/\s*D?(\d+)")
 NWR_DIESEL_TAG = re.compile(r"(?i)^\s*NWR\s*/\s*D\s*(\d+)\s*$")
-
-ITEM = re.compile(r"^item\s*\(\s*FEAT_(\w+)\s*,\s*(\w+)\s*,\s*(\d+)\s*\)", re.M)
-
-#: The features the file carries a `sort` block for.
-FEATURES = ("TRAINS", "ROADVEHS")
 
 HEADER = """\
 // Purchase-list order for OpenTTE2, maintained by hand (purchase_list.file).
@@ -56,8 +52,8 @@ HEADER = """\
 // be added here by hand. A unit typed `types: [TRAM, TRAIN]` appears in both blocks: the tram
 // side is ordered by the same rule.
 //
-// Rebuilt from the build's own items by tools/generate_sortpurchase.py, which build.py runs
-// after every successful build.
+// Rebuilt from the build's own items by tools/generate_sortpurchase.py, which BRBuild runs
+// before it reads this file (purchase_list.script in src/grf/GRF.yaml).
 """
 
 SECTIONS = {
@@ -112,26 +108,27 @@ def vehicle_metadata() -> dict[str, dict]:
     return found
 
 
-def built_items() -> dict[str, list[tuple[str, int]]]:
-    """The features and item symbols the last build produced, in the order it emitted them."""
-    if not NML.is_file():
-        raise SystemExit(f"No build output to read: {NML}")
+def built_items(path: Path) -> dict[str, list[tuple[str, str]]]:
+    """The items this build produced, per feature, in the order it emitted them.
 
-    items: dict[str, list[tuple[str, int]]] = {}
+    BRBuild writes the file (see `Builder._purchase_list_items`): each entry is the item
+    symbol, the vehicle it belongs to, and its profile and livery.
+    """
+    if not path.is_file():
+        raise SystemExit(
+            f"No build items to read: {path}\n"
+            "Build the project first, or point --items at the file BRBuild wrote."
+        )
 
-    for feature, symbol, item_id in ITEM.findall(NML.read_text(encoding="utf-8")):
-        items.setdefault(feature, []).append((symbol, int(item_id)))
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    features = payload.get("features") or {}
 
-    return items
-
-
-def variant_vehicles() -> dict[str, str]:
-    """Map each built variant's identifier to the vehicle it belongs to."""
-    registry = yaml.safe_load(REGISTRY.read_text(encoding="utf-8")) or {}
+    # Trains first, so the file reads the same way whichever order the build met them in.
+    ordered = sorted(features, key=lambda feature: (feature != "FEAT_TRAINS", feature))
 
     return {
-        variant["identifier"]: str(variant.get("vehicle", ""))
-        for variant in registry.get("variants", [])
+        feature: [(item["identifier"], str(item.get("vehicle", ""))) for item in features[feature]]
+        for feature in ordered
     }
 
 
@@ -184,10 +181,8 @@ def describe(vehicle: dict) -> str:
     return f"{name} ({vehicle['power']} hp)" if vehicle["power"] is not None else name
 
 
-def build_file() -> str:
+def build_file(items: dict[str, list[tuple[str, str]]]) -> str:
     metadata = vehicle_metadata()
-    owners = variant_vehicles()
-    items = built_items()
 
     def vehicle_of(unit: str) -> dict:
         for key in (unit.casefold(), unit.replace("_", "").casefold()):
@@ -198,31 +193,21 @@ def build_file() -> str:
 
     lines = [HEADER]
 
-    for feature in FEATURES:
-        built = items.get(feature, [])
-
-        if not built:
-            continue
-
+    for feature in items:
         units: dict[str, list[str]] = {}
 
         # The build's own order, so a unit's liveries keep the order its YAML declares.
-        for symbol, _item_id in built:
-            vehicle = owners.get(symbol)
-
-            if vehicle is None:
-                raise SystemExit(f"'{symbol}' is in the build but not in the registry")
-
-            units.setdefault(vehicle, []).append(symbol)
+        for identifier, unit in items[feature]:
+            units.setdefault(unit, []).append(identifier)
 
         ordered = sorted(units, key=lambda unit: (sort_key(vehicle_of(unit)), unit))
 
-        if feature == "TRAINS":
+        if feature == "FEAT_TRAINS":
             lines.append("sort(FEAT_TRAINS, [\n")
             sections = SECTIONS
         else:
             lines.append(TRAIN_FOOTER + "\n")
-            lines.append("sort(FEAT_ROADVEHS, [\n")
+            lines.append(f"sort({feature}, [\n")
             sections = ROADVEH_SECTIONS
 
         last_section = None
@@ -230,6 +215,12 @@ def build_file() -> str:
         for unit in ordered:
             vehicle = vehicle_of(unit)
             section = section_of(vehicle)
+
+            if section not in sections:
+                raise SystemExit(
+                    f"'{unit}' is a {vehicle['train_type'] or 'vehicle'} and has no section in the "
+                    f"{feature} block: add one to SECTIONS."
+                )
 
             if section != last_section:
                 if last_section is not None:
@@ -239,8 +230,8 @@ def build_file() -> str:
 
             lines.append(f"  // {describe(vehicle)}\n")
 
-            for symbol in units[unit]:
-                lines.append(f"  {symbol},\n")
+            for identifier in units[unit]:
+                lines.append(f"  {identifier},\n")
 
         # The block's last entry carries no trailing comma.
         lines[-1] = lines[-1].rstrip(",\n") + "\n"
@@ -251,10 +242,16 @@ def build_file() -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--items",
+        type=Path,
+        default=DEFAULT_ITEMS,
+        help="the build's items, as BRBuild writes them (default: %(default)s)",
+    )
     parser.add_argument("--dry-run", action="store_true", help="print the file instead of writing it")
     args = parser.parse_args()
 
-    content = build_file()
+    content = build_file(built_items(args.items))
 
     if args.dry_run:
         sys.stdout.write(content)

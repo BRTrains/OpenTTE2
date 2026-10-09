@@ -18,18 +18,8 @@ forward_args = sys.argv[1:]
 
 environment = {**os.environ, "BRBUILD_DIR": str(BRBUILD_DIR)}
 
-result = subprocess.run(
-    [sys.executable, str(BRBUILD_DIR / "Run.py"), PROJECT_NAME, *forward_args],
-    env=environment,
-)
-
-if result.returncode != 0:
-    raise SystemExit(result.returncode)
-
-# The purchase list names the item symbols the build produced, so it is rebuilt from them once
-# the build has succeeded: the file in the repository is then always the build's own item set,
-# with each entry in the group the project's rules put it in.
 subprocess.run(
-    [sys.executable, str(PROJECT_DIR / "tools" / "generate_sortpurchase.py")],
+    [sys.executable, str(BRBUILD_DIR / "Run.py"), PROJECT_NAME, *forward_args],
     check=True,
+    env=environment,
 )
