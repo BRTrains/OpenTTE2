@@ -78,39 +78,6 @@ params:
       3: 3x
       4: 4x 
 
-  - identifier: param_running_cost_factor
-    name_str: Running Cost Multiplier
-    desc_str: Adjust the running costs of all vehicles
-    min_value: 1
-    max_value: 9
-    def_value: 3
-    names:
-      1: Tiny (--)
-      2: Reduced (-)
-      3: Normal (Default)
-      4: Increased (+)
-      5: High (++)
-      6: Expensive (+++)
-      7: Excessive (++++)
-      8: Monstrous (+++++)
-      9: Ridiculous (++++++)
-
-  - identifier: param_purchase_cost_factor
-    name_str: Purchase Cost Multiplier
-    desc_str: Adjust the purchase costs of all vehicles
-    min_value: 1
-    max_value: 9
-    def_value: 3
-    names:
-      1: Tiny (--)
-      2: Reduced (-)
-      3: Normal (Default)
-      4: Increased (+)
-      5: High (++)
-      6: Expensive (+++)
-      7: Excessive (++++)
-      8: Monstrous (+++++)
-      9: Ridiculous (++++++)
 
   - identifier: param_disable_default_vehicles
     name_str: Hide Default OpenTTD vehicles?
