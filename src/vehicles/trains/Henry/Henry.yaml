@@ -21,15 +21,13 @@ dates:
 # `sprite_group` names the livery it copies). The two old-shape liveries carry the lower power
 # the rebuild replaced.
 liveries:
-  - name: Old Shape, Pacific, Green
-    power: 1000
+  - name: Third shape, Green
+  - name: New shape, Green
   - name: Old Shape, Green
     power: 1000
-    sprite_group: Old Shape, Pacific, Green
-  - name: New shape, Green
-    sprite_group: Old Shape, Pacific, Green
-  - name: Third shape, Green
-    sprite_group: Old Shape, Pacific, Green
+  - name: Old Shape, Pacific, Green
+    power: 1000
+
 
 additional_text:
   - Based on rejected GNR A1 pacific plans
