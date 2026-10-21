@@ -11,10 +11,11 @@ stats:
   weight: 84
   speed: 80
   num_vehicles: 2
-
+sprite_override: [1, 5]
 cargo: none
 dates:
   introduction_date: 1
+  
 
 # The sheet draws one locomotive and its tender, and every shape is that same drawing, so the
 # shapes are liveries of one formation: the three later ones reuse the first's rows (a livery's
@@ -23,10 +24,13 @@ dates:
 liveries:
   - name: Third shape, Green
   - name: New shape, Green
+    sprite_override: [2, 5]
   - name: Old Shape, Green
     power: 1000
+    sprite_override: [3, 5]
   - name: Old Shape, Pacific, Green
     power: 1000
+    sprite_override: [4, 5]
 
 
 additional_text:
