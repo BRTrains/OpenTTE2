@@ -22,10 +22,16 @@ dates:
 
 
 liveries:
-  - name: Red
+  - name: Black
+  - name: Black with nameplates
+    sprite_override: [2, 3]
+  - name: Black, donald
+    sprite_override: [2, 4]
+  - name: Black, Douglas
+    sprite_override: [2, 5]
 
 additional_text:
-  - Based on Furness Railway D5 0-6-0 # This is canon for the OpenTTE newGRF, and no argument will be taken
+  - Based on Caledonian Railway Class 812 # This is canon for the OpenTTE newGRF, and no argument will be taken
 
 special_tags:
   - operator/NWR
