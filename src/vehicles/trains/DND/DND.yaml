@@ -25,10 +25,13 @@ liveries:
   - name: Black
   - name: Black with nameplates
     sprite_override: [2, 3]
+    sprite_group: PREVIOUS
   - name: Black, donald
     sprite_override: [2, 4]
+    sprite_group: PREVIOUS
   - name: Black, Douglas
     sprite_override: [2, 5]
+    sprite_group: PREVIOUS
 
 additional_text:
   - Based on Caledonian Railway Class 812 # This is canon for the OpenTTE newGRF, and no argument will be taken

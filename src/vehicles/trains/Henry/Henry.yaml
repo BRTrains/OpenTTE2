@@ -25,12 +25,15 @@ liveries:
   - name: Third shape, Green
   - name: New shape, Green
     sprite_override: [2, 5]
+    sprite_group: PREVIOUS
   - name: Old Shape, Green
     power: 1000
     sprite_override: [3, 5]
+    sprite_group: PREVIOUS
   - name: Old Shape, Pacific, Green
     power: 1000
     sprite_override: [4, 5]
+    sprite_group: PREVIOUS
 
 
 additional_text:
