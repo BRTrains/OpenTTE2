@@ -12,6 +12,10 @@ nmlc.log
 *.png.cacheindex
 *.png.sheetcache.json
 *.lightcache.json
+**/meta/
+*.normalization.json
+*.stagecache.json
+*.purchase.json
 **/working/
 *_working.png
 legacy_fixed.png
