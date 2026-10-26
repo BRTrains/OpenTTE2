@@ -28,3 +28,6 @@ special_tags:
   - operator/NWR
   - NWR/12 # Optional for trains with a known number (eg "number/1" for Thomas)
   - whyte/4-2-2 # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
+
+# All TTE2 vehicles remain available indefinitely.
+model_life: 0

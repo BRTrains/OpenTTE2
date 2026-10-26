@@ -28,3 +28,6 @@ additional_text:
 special_tags:
   - operator/Sodor Roadways
   - Drivetrain/4x2 # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
+
+# All TTE2 vehicles remain available indefinitely.
+model_life: 0

@@ -26,3 +26,6 @@ additional_text:
 special_tags:
   - operator/NWR
   - whyte/2-10-0
+
+# All TTE2 vehicles remain available indefinitely.
+model_life: 0

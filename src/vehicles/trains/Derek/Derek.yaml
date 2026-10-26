@@ -27,3 +27,6 @@ special_tags:
   - operator/NWR
   - NWR/D5 # Optional for trains with a known number (eg "number/1" for Thomas)
   - Commonwealth/Bo-Bo 
+
+# All TTE2 vehicles remain available indefinitely.
+model_life: 0

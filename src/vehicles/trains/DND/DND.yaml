@@ -41,3 +41,6 @@ special_tags:
   - whyte/0-6-0 # Optional for trains with a known Whyte notation (eg "whyte/0-6-0T" for Thomas)
   - NWR/9,10 # Optional for trains with a known number (eg "number/1" for Thomas)
   - BR/57646,57647
+
+# All TTE2 vehicles remain available indefinitely.
+model_life: 0
