@@ -21,3 +21,6 @@ additional_text:
 special_tags:
   - owner/ S. C. Ruffey Ballast Contractors
   - I'm comming apart!
+
+# All TTE2 vehicles remain available indefinitely.
+model_life: 0

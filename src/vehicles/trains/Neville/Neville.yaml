@@ -27,3 +27,6 @@ special_tags:
   - operator/NWR
   - TOPS/33010 # Optional for trains with a known number (eg "number/1" for Thomas)
   - whyte/0-6-0
+
+# All TTE2 vehicles remain available indefinitely.
+model_life: 0

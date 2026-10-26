@@ -27,3 +27,6 @@ additional_text:
 
 special_tags:
   - operator/NWR
+
+# All TTE2 vehicles remain available indefinitely.
+model_life: 0

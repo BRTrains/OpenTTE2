@@ -23,3 +23,6 @@ additional_text:
 
 special_tags:
   - be careful with them!
+
+# All TTE2 vehicles remain available indefinitely.
+model_life: 0
