@@ -1110,15 +1110,16 @@ variants:
   compatibility:
     capacity: 0
     articulated_count: 1
-    lengths: []
+    lengths:
+    - 4
   archive: generated_variants/1043_salty_default_red_train.gnml
   identifier: salty_default_red_train
   name_string: str_salty_default_red_train_name
   strings:
-    str_salty_default_red_train_name: '{RED}(devmode){BLACK} Salty the Dockyard Diesel
-      - {SILVER}Locomotive{BLACK} - {GOLD}Red'
-    str_salty_default_red_train_group_name: '{RED}(devmode){BLACK} Salty the Dockyard
-      Diesel - {SILVER}Locomotive{BLACK} - {GOLD}Red'
+    str_salty_default_red_train_name: Salty the Dockyard Diesel - {SILVER}Locomotive{BLACK}
+      - {GOLD}Red
+    str_salty_default_red_train_group_name: Salty the Dockyard Diesel - {SILVER}Locomotive{BLACK}
+      - {GOLD}Red
     str_salty_default_red_train_nested_name: '{SILVER}Locomotive{BLACK} - {GOLD}Red'
     str_salty_default_red_train_additional_text: Based on BR Class 07{}Down by the
       dockside
@@ -1985,3 +1986,28 @@ variants:
       - {GOLD}Black Douglas'
     str_dnd_default_black__douglas_train_additional_text: Based on Caledonian Railway
       Class 812
+- id: 1071
+  vehicle: walter
+  profile: default
+  livery: black
+  vehicle_type: train
+  generation: 1
+  locked: false
+  active: true
+  deprecated: false
+  compatibility:
+    capacity: 0
+    articulated_count: 1
+    lengths:
+    - 5
+  archive: generated_variants/1071_walter_default_black_train.gnml
+  identifier: walter_default_black_train
+  name_string: str_walter_default_black_train_name
+  strings:
+    str_walter_default_black_train_name: Walter the Austerity Engine - {SILVER}Tank
+      Engine{BLACK} - {GOLD}Black
+    str_walter_default_black_train_group_name: Walter the Austerity Engine - {SILVER}Tank
+      Engine{BLACK} - {GOLD}Black
+    str_walter_default_black_train_nested_name: '{SILVER}Tank Engine{BLACK} - {GOLD}Black'
+    str_walter_default_black_train_additional_text: Based on war department austerity
+      0-6-0T
